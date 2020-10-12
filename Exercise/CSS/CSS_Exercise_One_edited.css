@@ -6,46 +6,33 @@ header {
     width: 100%;
     background-color: slategrey;
     height: 150px;
-}
-
-nav {
-    width: 100%;
-    height: 100%;
+    padding-top: 90px;
 }
 
 nav ul {
-    display: inline-table;
     list-style-type: none;
     clear: both;
     content: "";
+    display: table;
     background-color: #cdcdcb;
-    padding: 0px;
-    width: 400px;
+    width: auto;
     height: 50px;
-    clear: both;
-    /* both text-align:  and margin 0 auto are used to create center menu; */
-    /* text-align: center; */
-    /* margin: 0 auto; */
-    text-align: center;
-    margin-left: 35%;
-    margin-top: 100px;
-    border-bottom: 5px solid slategrey;
+    margin: 0 auto;
+    padding: 0;
 }
 
 nav li {
     float: left;
-    padding: 10px 70px 10px 10px;
+    padding: 20px;
 }
 
 nav li:hover {
-    color: red;
+    background-color: lightsteelblue;
     border: 1px solid #cdcdcb;
 }
 
 .tatalContainer {
     background-color: #cdcdcb;
-    /* margin-bottom: 16px; */
-    height: 800px;
 }
 
 .topBox {
@@ -102,13 +89,6 @@ div.imgContainer p {
     text-align: right;
 }
 
-.bottomDivision {
-    width: 100%;
-    height: 150px;
-    background-size: 100% 100%;
-    background-image: url('../image_exercise/download2.jpeg');
-}
-
 .rightImg {
     width: 250px;
     height: 250px;
@@ -128,7 +108,7 @@ div.imgContainer p {
 
 .bottomBox {
     width: 100%;
-    margin-top: 16px;
+    padding: 16px 0px;
     clear: both;
     height: 250px;
 }
@@ -174,4 +154,11 @@ div.gallery3 img {
     width: 100%;
     height: 100%;
     float: left;
+}
+
+.bottomDivision {
+    width: 100%;
+    height: 150px;
+    background-size: 100% 100%;
+    background-image: url('../images/download2.jpeg');
 }
