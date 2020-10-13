@@ -87,6 +87,8 @@ header {
 
 .footerSection {
     background-color: black;
+    height: 100px;
+    padding: 5px;
 }
 
 .bodyContainer::after {
