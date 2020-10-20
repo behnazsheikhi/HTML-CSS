@@ -35,9 +35,18 @@ header {
     border: 1px solid #cdcdcb;
 }
 
+
+/*  it is useed to set background color for main section */
+
 .tatalContainer {
     background-color: #cdcdcb;
 }
+
+
+/* the main section is divided to 2 boxes including topBox and bottomBox */
+
+
+/* topBox consists of rightBox and leftBox */
 
 .topBox {
     padding-top: 16px;
@@ -54,6 +63,13 @@ header {
     padding-right: 24px;
 }
 
+.rightBox {
+    width: 100%;
+    height: 100%;
+    background-color: #ccddff;
+    border-radius: 3px;
+}
+
 .leftBoxContainer {
     width: 50%;
     height: 100%;
@@ -63,23 +79,14 @@ header {
     padding-right: 24px;
 }
 
-.rightBox {
-    width: 100%;
-    height: 100%;
-    background-color: #ccddff;
-    border-radius: 3px;
-}
+
+/* leftBox is used to show 3 images and descriptions */
 
 .leftBox {
     width: 100%;
     height: 100%;
     background-color: #ccddff;
     border-radius: 3px;
-}
-
-img {
-    float: right;
-    margin: auto;
 }
 
 .imgContainer {
@@ -89,25 +96,13 @@ img {
     height: 30%;
 }
 
+img {
+    float: right;
+    margin: auto;
+}
+
 .imgContainer p {
     float: left;
-}
-
-.rightImg {
-    width: 250px;
-    height: 250px;
-    float: right;
-    margin: 16px;
-}
-
-.centerImg {
-    width: 400px;
-    height: 250px;
-}
-
-.leftImg {
-    width: 100px;
-    height: 100px;
 }
 
 .bottomBox {
@@ -116,6 +111,9 @@ img {
     clear: both;
     height: 250px;
 }
+
+
+/* gallery 1 to 3 refer to 3 images in the bottom box of main section */
 
 .gallery1,
 .gallery2,
