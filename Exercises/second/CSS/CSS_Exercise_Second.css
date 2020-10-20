@@ -97,6 +97,9 @@ header {
     display: table;
 }
 
+
+/* for mobile: */
+
 [class*="col-s-12"] {
     width: 100%;
 }
@@ -109,7 +112,7 @@ header {
     width: 41.66%;
 }
 
-[class*="col-s-no"] {
+[class="col-s-no"] {
     display: none;
 }
 
@@ -120,6 +123,9 @@ header {
     color: gray;
 }
 
+
+/* For tablet: */
+
 @media only screen and (min-width: 600px) {
     .detail {
         width: 100%;
@@ -127,7 +133,6 @@ header {
         background-color: blue;
         color: gray;
     }
-    /* For desktop: */
     .col-t-1 {
         width: 8.33%;
     }
@@ -166,6 +171,9 @@ header {
     }
 }
 
+
+/* For desktop: */
+
 @media only screen and (min-width: 768px) {
     .detail {
         width: 100%;
@@ -173,7 +181,6 @@ header {
         background-color: yellow;
         color: gray;
     }
-    /* For desktop: */
     .col-1 {
         width: 8.33%;
     }
