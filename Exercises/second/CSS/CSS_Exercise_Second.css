@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-header {
+.hFSection {
     background-color: black;
     margin-bottom: 16px;
 }
@@ -22,7 +22,7 @@ header {
     padding-left: 16px;
 }
 
-.row::after {
+.subSection::after {
     content: "";
     clear: both;
     display: table;
@@ -31,58 +31,12 @@ header {
 .title {
     color: gray;
     margin: 0%;
+    margin-bottom: 16px;
     text-align: left;
 }
 
 .hero {
     background-color: black;
-    margin-bottom: 16px;
-    padding: 5px;
-}
-
-.heroSection {
-    padding-top: 16px;
-    padding-left: 16px;
-}
-
-.heroSection::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.mainSection {
-    background-color: black;
-    margin-bottom: 16px;
-    padding: 5px;
-}
-
-.bodySection {
-    padding-top: 16px;
-    padding-left: 16px;
-}
-
-.bodySection::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.sideBar {
-    background-color: black;
-    margin-bottom: 16px;
-    padding: 5px;
-}
-
-.sideSection {
-    padding-top: 16px;
-    padding-left: 16px;
-}
-
-.sideSection::after {
-    content: "";
-    clear: both;
-    display: table;
 }
 
 .footerSection {
@@ -91,10 +45,8 @@ header {
     padding: 5px;
 }
 
-.bodyContainer::after {
-    content: "";
-    clear: both;
-    display: table;
+.foorerSection {
+    height: 100px;
 }
 
 
