@@ -7,6 +7,9 @@
     margin-bottom: 16px;
 }
 
+
+/* all the elements with which their class name include col- have the same property as bellow: */
+
 [class*="col-"] {
     text-align: center;
     color: #cccccc;
@@ -28,6 +31,9 @@
     display: table;
 }
 
+
+/* same format for all elements with title class name */
+
 .title {
     color: #cccccc;
     margin: 0%;
@@ -39,22 +45,11 @@
     background-color: #000000;
 }
 
-
-/* .heroSection {
-    padding-bottom: 16px;
-    float: left;
-} */
-
 .advSection {
     float: left;
     width: 100%;
     text-align: center;
     padding-bottom: 16px;
-}
-
-.foot {
-    background-color: #000000;
-    height: 100px;
 }
 
 .footerSection {
@@ -63,6 +58,12 @@
 
 
 /* for mobile: */
+
+
+/* since whole the window is divided to 12 sections and each section has 8.33% width so  */
+
+
+/* 12 means this element fill whole the container */
 
 [class*="col-s-12"] {
     width: 100%;
@@ -75,6 +76,9 @@
 [class*="col-s-5"] {
     width: 41.66%;
 }
+
+
+/* class name col-s-no refers to element that is not shown in mobile */
 
 [class="col-s-no"] {
     display: none;
@@ -101,7 +105,7 @@
 
 /* For tablet: */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width:768px) {
     .detail {
         width: 100%;
         height: 100%;
@@ -160,6 +164,7 @@
         padding-bottom: 16px;
         display: inline-block;
     }
+    /* elements which are hidden in mobile must be shown in tablet or desktop */
     [class*="col-s-no"] {
         display: inline-block;
     }
