@@ -3,13 +3,13 @@
 }
 
 .hFSection {
-    background-color: black;
+    background-color: #000000;
     margin-bottom: 16px;
 }
 
 [class*="col-"] {
     text-align: center;
-    color: gray;
+    color: #cccccc;
     float: left;
     margin: 0%;
     font-size: 15px;
@@ -29,23 +29,35 @@
 }
 
 .title {
-    color: gray;
+    color: #cccccc;
     margin: 0%;
     margin-bottom: 16px;
     text-align: left;
 }
 
 .hero {
-    background-color: black;
+    background-color: #000000;
+}
+
+
+/* .heroSection {
+    padding-bottom: 16px;
+    float: left;
+} */
+
+.advSection {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.foot {
+    background-color: #000000;
+    height: 100px;
 }
 
 .footerSection {
-    background-color: black;
-    height: 100px;
-    padding: 5px;
-}
-
-.foorerSection {
     height: 100px;
 }
 
@@ -68,11 +80,22 @@
     display: none;
 }
 
+.heroSection {
+    width: 100%;
+    float: left;
+    padding-bottom: 16px;
+}
+
 .detail {
     width: 100%;
     height: 100%;
-    background-color: green;
-    color: gray;
+    background-color: #094700;
+    color: #000000;
+}
+
+.sideSection,
+[class*="col-s-no"] {
+    display: none;
 }
 
 
@@ -82,8 +105,8 @@
     .detail {
         width: 100%;
         height: 100%;
-        background-color: blue;
-        color: gray;
+        background-color: #0000FF;
+        color: #000000;
     }
     .col-t-1 {
         width: 8.33%;
@@ -121,6 +144,25 @@
     .col-t-12 {
         width: 100%;
     }
+    .heroSection {
+        width: 75%;
+    }
+    .bodySection {
+        width: 100%;
+    }
+    .advSection {
+        width: 25%;
+        padding-left: 16px;
+        height: 155px;
+    }
+    .sideSection {
+        width: 100%;
+        padding-bottom: 16px;
+        display: inline-block;
+    }
+    [class*="col-s-no"] {
+        display: inline-block;
+    }
 }
 
 
@@ -130,8 +172,8 @@
     .detail {
         width: 100%;
         height: 100%;
-        background-color: yellow;
-        color: gray;
+        background-color: #f0df00;
+        color: #000000;
     }
     .col-1 {
         width: 8.33%;
@@ -168,5 +210,21 @@
     }
     .col-12 {
         width: 100%;
+    }
+    .heroSection {
+        width: 75%;
+    }
+    .advSection {
+        width: 25%;
+        padding-left: 16px;
+        height: 120px;
+    }
+    .sideSection {
+        width: 25%;
+        padding-left: 16px;
+        display: inline-block;
+    }
+    [class*="col-s-no"] {
+        display: inline-block;
     }
 }
