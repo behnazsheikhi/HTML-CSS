@@ -1,0 +1,261 @@
+/* chosed font for this website is vasir */
+
+
+/* for more information refer to this lik 'https://rastikerdar.github.io/vazir-font/' */
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('../font/vasir/Vazir.woff2') format('woff2'), url('../font/vasir/Vazir.woff') format('woff'), url('../font/vasir/Vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* assign font-family and font size to the whole page */
+
+html,
+body {
+    font-family: 'Vazir';
+    font-size: 15px;
+}
+
+
+/* since website is designed in farsi, use direction rtl for all elements */
+
+* {
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+
+/* blog-main-conainer is a container for whole the page elements including header,main and footer*/
+
+.blog-main-conainer {
+    color: #000!important;
+    background-color: #f1f1f1;
+    margin: 0;
+}
+
+.blog-header-container {
+    text-align: center;
+}
+
+.blog-padding-32 {
+    padding: 32px 16px;
+}
+
+h1,
+h3,
+h4,
+h5 {
+    margin: 10px 0;
+}
+
+p {
+    margin: 15px 0;
+}
+
+.blog-tag {
+    background-color: #000;
+    color: white;
+    padding: 0 8px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+/* blog-row includes  */
+
+.blog-row {
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%;
+}
+
+.body-left {
+    width: 66.66666%;
+    float: left;
+}
+
+.marign-16 {
+    margin: 16px;
+}
+
+.body-right {
+    width: 33.33%;
+    float: left;
+}
+
+.left-top,
+.left-bottom {
+    /* width: 100%; */
+    /* height: 30%; */
+    /* background-color: yellowgreen; */
+}
+
+.box-shadow {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #FFFFFF;
+}
+
+.blog-container {
+    padding: 0 16px;
+}
+
+hr {
+    border: 1px solid #eee;
+    margin: 20px;
+    visibility: visible;
+}
+
+.blog-foorer-section {
+    background-color: #616161;
+    margin-top: 16px;
+    height: 200px;
+    padding: 32px 16px;
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+.lt-first-container,
+.lt-second-container,
+.lb-first-container,
+.lb-second-container,
+.rt-top-container {
+    padding: 0 16px;
+}
+
+
+/* .description {
+    margin: 20px 0;
+} */
+
+.button-container {
+    width: 66.66%;
+    float: left;
+}
+
+.blog-border {
+    border: 1px solid #ccc;
+    background-color: #FFFFFF;
+}
+
+.comment-container {
+    width: 33.33%;
+    float: left;
+}
+
+.sub-container {
+    clear: both;
+    display: table;
+    content: "";
+    width: 100%;
+}
+
+.top-container {
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+}
+
+.blog-list {
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+}
+
+.list-image {
+    margin-left: 16px;
+    width: 50px;
+    float: right;
+}
+
+.list-item {
+    border-bottom: 1px solid #ddd;
+    padding: 16px;
+    clear: both;
+    display: table;
+    content: "";
+    width: 100%;
+}
+
+.list-item:hover {
+    background-color: gray;
+}
+
+.rb-bottom-cintainer {
+    padding: 0 16px;
+}
+
+.btn_footer {
+    border: none;
+    background-color: #000;
+    color: white;
+}
+
+.blog-opacity {
+    opacity: 0.3;
+}
+
+.blog-btn {
+    padding: 12px 24px;
+    font-family: 'Vazir';
+}
+
+.blog-btn:hover {
+    background-color: gray;
+}
+
+.btn_pointer {
+    cursor: pointer;
+}
+
+.btn_pointer:hover {
+    color: black;
+}
+
+.btn_opacity {
+    cursor: not-allowed;
+}
+
+footer p {
+    color: white;
+}
+
+.blog-padding-large {
+    padding: 12px 24px;
+}
+
+.blog-radius {
+    border-radius: 50%;
+    text-align: center;
+}
+
+.blog-custom-direction {
+    direction: ltr;
+}
+
+.font-large {
+    font-size: 18px;
+}
+
+.margin-bottom {
+    margin-bottom: 16px;
+}
+
+.blog-tag-gray {
+    background-color: #f1f1f1;
+    color: black;
+    padding: 0 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+}
+
+a {
+    color: white;
+}
