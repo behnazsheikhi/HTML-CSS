@@ -253,8 +253,8 @@ a {
     margin-left: 5px;
 }
 
-.popular-list {
-    list-style-type: none;
+.popular-topic {
+    margin: 0%;
 }
 
 
@@ -275,8 +275,4 @@ a {
     .comment-container {
         display: inline-block;
     }
-}
-
-.popular-topic {
-    margin: 0%;
 }
