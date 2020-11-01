@@ -1,4 +1,7 @@
-/* chosed font for this website is vasir */
+/* this blog is designed based on https://www.w3schools.com/w3css/tryw3css_templates_blog.htm */
+
+
+/* chosen font for this website is vasir */
 
 
 /* for more information refer to this lik 'https://rastikerdar.github.io/vazir-font/' */
@@ -11,30 +14,44 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'VazirBold';
+    src: url('../font/vasir-bold/Vazir-Bold.woff2') format('woff2'), url('../font/vasir-bold/Vazir-Bold.woff') format('woff'), url('../font/vasir-bold/Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 /* assign font-family and font size to the whole page */
+
+
+/* since website is designed in farsi, use direction rtl for all elements */
 
 html,
 body {
     font-family: 'Vazir';
     font-size: 15px;
+    direction: rtl;
 }
-
-
-/* since website is designed in farsi, use direction rtl for all elements */
 
 * {
     box-sizing: border-box;
-    direction: rtl;
+}
+
+.blog-text-bold,
+.popular-items {
+    font-family: 'VazirBold';
 }
 
 
 /* blog-main-conainer is a container for whole the page elements including header,main and footer*/
 
 .blog-main-conainer {
-    color: #000!important;
     background-color: #f1f1f1;
     margin: 0;
+    /* max-width: 1200px; */
+    max-width: 1400px;
 }
 
 .blog-header-container {
@@ -48,37 +65,38 @@ body {
 h1,
 h3,
 h4,
-h5 {
+h5,
+p {
     margin: 10px 0;
 }
 
-p {
-    margin: 15px 0;
-}
-
-hr {
-    border: 1px solid #eee;
-    margin: 20px;
-    visibility: visible;
-}
-
-.marign-16 {
-    margin: 16px;
+.containers-margin {
+    margin: 32px 16px;
 }
 
 .blog-tag {
     background-color: #000;
-    color: white;
+    color: #FFFFFF;
     padding: 0 8px;
     text-align: center;
     display: inline-block;
 }
 
-.blog-row {
+.blog-row,
+.sub-container {
+    width: 100%;
+}
+
+.blog-row::after,
+.sub-container::after {
     content: "";
     clear: both;
     display: table;
-    width: 100%;
+}
+
+.blog-list {
+    margin: 0%;
+    padding: 0%;
 }
 
 
@@ -89,29 +107,25 @@ hr {
     width: 100%;
 }
 
-.comment-container {
-    display: none;
-}
-
-.box-shadow {
+.containers-shadow {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #FFFFFF;
 }
 
 .blog-container {
-    padding: 0 16px;
+    padding: 5px 16px;
 }
 
 .blog-foorer-section {
     background-color: #616161;
     margin-top: 16px;
-    /* height: 200px; */
     padding: 32px 16px;
 }
 
 img {
     vertical-align: middle;
     width: 100%;
+    height: 50%;
 }
 
 .button-container {
@@ -127,24 +141,13 @@ img {
 .comment-container {
     width: 33.33%;
     float: left;
-}
-
-.sub-container {
-    clear: both;
-    display: table;
-    content: "";
-    width: 100%;
+    padding: 20px 0;
+    display: none;
 }
 
 .top-container {
     padding: 8px 16px;
     background-color: #f1f1f1;
-}
-
-.blog-list {
-    margin: 0%;
-    padding: 0%;
-    list-style-type: none;
 }
 
 .list-image {
@@ -163,13 +166,13 @@ img {
 }
 
 .list-item:hover {
-    background-color: gray;
+    background-color: #808080;
 }
 
 .btn_footer {
     border: none;
     background-color: #000;
-    color: white;
+    color: #FFFFFF;
 }
 
 .blog-opacity {
@@ -178,11 +181,11 @@ img {
 
 .blog-btn {
     padding: 12px 24px;
-    font-family: 'Vazir';
+    font-family: 'VazirBold';
 }
 
 .blog-btn:hover {
-    background-color: gray;
+    background-color: #808080;
 }
 
 .btn_pointer {
@@ -190,7 +193,7 @@ img {
 }
 
 .btn_pointer:hover {
-    color: black;
+    color: #000000;
 }
 
 .btn_opacity {
@@ -199,7 +202,7 @@ img {
 
 footer p,
 a {
-    color: white;
+    color: #FFFFFF;
 }
 
 .blog-padding-large {
@@ -215,24 +218,43 @@ a {
 /* whole the page is right to left but some sections must be left to right */
 
 .blog-custom-direction {
-    direction: ltr;
+    text-align: left;
 }
 
 .font-large {
     font-size: 18px;
 }
 
-.margin-bottom {
+.tags-margin {
     margin-bottom: 16px;
 }
 
 .blog-tag-gray {
     background-color: #f1f1f1;
-    color: black;
+    color: #000000;
     padding: 0 8px;
     text-align: center;
     display: inline-block;
     font-size: 12px;
+}
+
+.custom-border {
+    border-bottom: none;
+}
+
+.labels {
+    list-style-type: none;
+    clear: both;
+    display: table;
+}
+
+.labels-item {
+    margin-bottom: 12px;
+    margin-left: 5px;
+}
+
+.popular-list {
+    list-style-type: none;
 }
 
 
@@ -253,4 +275,8 @@ a {
     .comment-container {
         display: inline-block;
     }
+}
+
+.popular-topic {
+    margin: 0%;
 }
