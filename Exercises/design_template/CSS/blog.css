@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'VazirBold';
-    src: url('../font/vasir-bold/Vazir-Bold.woff2') format('woff2'), url('../font/vasir-bold/Vazir-Bold.woff') format('woff'), url('../font/vasir-bold/Vazir-Bold.ttf') format('truetype');
+    src: url('../font/vasir/Vazir-Bold.woff2') format('woff2'), url('../font/vasir/Vazir-Bold.woff') format('woff'), url('../font/vasir/Vazir-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -39,8 +39,10 @@ body {
     box-sizing: border-box;
 }
 
-.blog-text-bold,
-.popular-items {
+h1,
+h3,
+h4,
+.blog-text-bold {
     font-family: 'VazirBold';
 }
 
@@ -49,9 +51,8 @@ body {
 
 .blog-main-conainer {
     background-color: #f1f1f1;
-    margin: 0;
-    /* max-width: 1200px; */
-    max-width: 1400px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .blog-header-container {
@@ -71,7 +72,7 @@ p {
 }
 
 .containers-margin {
-    margin: 32px 16px;
+    margin: 32px 0;
 }
 
 .blog-tag {
@@ -95,15 +96,15 @@ p {
 }
 
 .blog-list {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
 
 
 /* for mobile   */
 
-.body-left,
-.body-right {
+.body-right,
+.body-left {
     width: 100%;
 }
 
@@ -211,7 +212,6 @@ a {
 
 .blog-radius {
     border-radius: 50%;
-    text-align: center;
 }
 
 
@@ -254,24 +254,26 @@ a {
 }
 
 .popular-topic {
-    margin: 0%;
+    margin: 0;
 }
 
 
 /* for tablet and desktop */
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 800px) {
     .body-left {
         width: 66.66666%;
         float: left;
+        padding-left: 16px;
     }
     .body-right {
         width: 33.33%;
         float: left;
+        padding-right: 16px;
     }
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 600px) {
     .comment-container {
         display: inline-block;
     }
