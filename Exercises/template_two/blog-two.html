@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="CSS/blog-two.css">
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="fontawesome/css/v4-shims.css">
+
 </head>
 
 <body class="blog-whole-container">
@@ -53,12 +54,31 @@
         <div class="blog-logo-container">
             <img src="images/sailboat.jpg" alt="نماد وب سایت!">
             <div class="text-stick">
-                <h3>یادگیری طراحی وب سایت</h3>
+                <button onclick="openModal()" id="btn-modal">یادگیری طراحی وب سایت</button>
             </div>
+            <!-- modal -->
+            <div id="blog-modal" class="modal">
+                <div class="modal-content">
+                    <header class="modal-header modal-padding blog-bColor-blue">
+                        <h3>این قسمت مربوط به تیتر سایت می باشد</h3>
+                        <h4>توضیحات مربوط به تیتر سایت</h4>
+                        <div onclick="closeModal()" class="close">&times;</div>
+                    </header>
+                    <div class="modal-main modal-padding  blog-main-bColor">
+                        <h4>توضیحات مربوط به تیتر سایت</h4>
+                    </div>
+                    <footer class="modal-footer modal-padding  blog-bColor-blue">
+                        <h5>توضیحات مربوط به تیتر سایت</h5>
+
+                    </footer>
+                </div>
+
+            </div>
+            <!-- end of modal -->
         </div>
         <!-- end of image container -->
         <!-- our team section-->
-        <div class="blog-team-section blog-main-bColor">
+        <div id="team" class="blog-team-section blog-main-bColor">
             <h2>معرفی تیم</h2>
             <p> ملاقات با اعضای تیم:</p>
             <div class="employees-bio blog-main-clear">
@@ -86,7 +106,7 @@
         </div>
         <!-- end of our team section-->
         <!-- work section -->
-        <div class="blog-work-section blog-main-clear">
+        <div id="work" class="blog-work-section blog-main-clear">
             <section class="work-img-description">
                 <div class="work-card blog-main-bColor">
                     <img class="work-img" src="images/snow.jpg" alt="بارش برف">
@@ -148,7 +168,7 @@
         </div>
         <!-- end of sticky button section -->
         <!-- price section -->
-        <div class="blog-price-section blog-main-bColor">
+        <div id="price" class="blog-price-section blog-main-bColor">
             <h2>لیست قیمت ها</h2>
             <h4>طرح مناسب را بر اساس کسب و کار خود انتخاب نمایید</h4>
             <div class="blog-price-description blog-main-clear">
@@ -208,7 +228,7 @@
         </div>
         <!-- end of price section -->
         <!-- contact section -->
-        <div class="blog-contact-section blog-bColor-lGray">
+        <div id="contact" class="blog-contact-section blog-bColor-lGray">
             <div class="contact-description blog-main-clear">
                 <div class="contact-info">
                     <p class="custom-align custom-font custom-header">تماس با ما</p>
@@ -270,7 +290,7 @@
 
     </footer>
     </div>
-
+    <script src="JS/blog-two.js"></script>
 </body>
 
 </html>
