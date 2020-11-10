@@ -1,0 +1,85 @@
+            <!-- right menu -->
+            <!-- <div class="menu-right">
+                <nav>
+                    <ul class="blog-main-menu blog-main-clear">
+                        <li class=" menu-list menu-list-bColor">
+                            <a class="items-fColor" href="#">
+                                <i class="fa fa-home menu-icon" aria-hidden="true"></i> نماد </a>
+                        </li>
+                        <li class="menu-list"><a class="items-fColor" href="team">اعضای تیم</a></li>
+                        <li class="menu-list"><a class="items-fColor" href="work">نمونه کار</a></li>
+                        <li class="menu-list"><a class="items-fColor" href="price">قیمت</a></li>
+                        <li class="menu-list"><a class="items-fColor" href="contact">تماس با ما</a></li>
+                         dropdown container -->
+            <!-- <li class="menu-list dropdown-box">
+                            <a class="items-fColor dropdown-link" href="#">سایر موارد
+                                <i class="fa fa-sort-down" aria-hidden="true"></i>
+                            </a> -->
+            <!-- dropdown items -->
+            <!-- <div class="dropdown-content">
+                                <a href="">لینک</a>
+                                <a href="">لینک</a>
+                                <a href="">لینک</a>
+                            </div>
+                        </li> -->
+            <!-- end of dropdown container -->
+            <!-- </ul>
+                </nav>
+            </div>  -->
+            <!-- left menu -->
+            <!-- <div class="menu-left">
+                <a href="" title="جستجو"><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div> -->
+            <!-- second -->
+
+
+
+                /* .menu-right {
+    float: right;
+    width: 97%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+
+.menu-left {
+    float: left;
+    width: 3%;
+    padding: 8px 16px;
+} */
+    /* it includes search icon */
+    /* .menu-left:hover {
+    background-color: #009688;
+} */
+    
+
+                <nav>
+                <ul class="blog-main-menu blog-main-clear">
+                    <li class="menu-list menu-list-bColor">
+                        <a class="items-fColor" href="#">
+                            <i class="fa fa-home menu-icon" aria-hidden="true"></i> نماد </a>
+                    </li>
+                    <li class="menu-list"><a class="items-fColor" href="team">اعضای تیم</a></li>
+                    <li class="menu-list"><a class="items-fColor" href="work">نمونه کار</a></li>
+                    <li class="menu-list"><a class="items-fColor" href="price">قیمت</a></li>
+                    <li class="menu-list"><a class="items-fColor" href="contact">تماس با ما</a></li>
+                    <!-- dropdown container -->
+                    <li class="menu-list dropdown-box">
+                        <a class="items-fColor dropdown-link" href="#">سایر موارد
+                            <i class="fa fa-sort-down" aria-hidden="true"></i>
+                        </a>
+                        <!-- dropdown items -->
+                        <div class="dropdown-content">
+                            <a href="">لینک</a>
+                            <a href="">لینک</a>
+                            <a href="">لینک</a>
+                        </div>
+                    </li>
+                    <!-- end of dropdown container -->
+                    <li class="list-search">
+                        <a class="items-fColor" href="" title="جستجو">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>

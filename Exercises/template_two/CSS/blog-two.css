@@ -1,0 +1,472 @@
+/* this page is designed base on https://www.w3schools.com/w3css/tryw3css_templates_website.htm#myPage */
+
+
+/* selected font for this page is vasir  */
+
+
+/* for more information go to this lik 'https://rastikerdar.github.io/vazir-font/' */
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('../font/vasir/Vazir.woff2') format('woff2'), url('../font/vasir/Vazir.woff') format('woff'), url('../font/vasir/Vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirBold';
+    src: url('../font/vasir/Vazir-Bold.woff2') format('woff2'), url('../font/vasir/Vazir-Bold.woff') format('woff'), url('../font/vasir/Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Vazir';
+    font-size: 15px;
+    direction: rtl;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* .blog-selected-padding {
+            padding: 8px 16px;
+        } */
+
+.custom-font {
+    font-size: 24px;
+    font-family: 'VazirBold';
+}
+
+.blog-main-bColor {
+    background-color: #ffffe6;
+}
+
+.blog-main-clear::after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.blog-footer,
+.blog-fColor-white,
+a {
+    color: #ffffff
+}
+
+
+/* .blog-fColor-black, */
+
+.footer-list a:hover,
+.contact-send a:hover,
+.price-items a:hover,
+.stick-button:hover,
+.items-fColor:hover {
+    color: #000000;
+}
+
+.items-bColor:hover {
+    background-color: #ffffff;
+}
+
+.footer-list a,
+.price-items a,
+.blog-bColor-blue,
+.list-search:hover,
+.menu-list-bColor,
+.text-stick:hover {
+    background-color: #009688;
+}
+
+.footer-list a:hover,
+.contact-send a:hover,
+.price-items a:hover,
+.blog-bColor-gray,
+.menu-list-bColor:hover,
+.dropdown-content a:hover,
+.dropdown-box:hover,
+.stick-button:hover {
+    background-color: #a6a6a6;
+}
+
+.blog-footer,
+.blog-bColor-black,
+.blog-menu-container {
+    background-color: #000000;
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+}
+
+.blog-main-menu {
+    direction: rtl;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list {
+    float: right;
+}
+
+.blog-main-menu a {
+    padding: 8px 16px;
+    display: inline-block;
+}
+
+.list-search {
+    float: left;
+}
+
+.menu-icon {
+    margin-left: 16px;
+}
+
+
+/* properties of dropdown */
+
+.dropdown-box {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    right: 0%;
+    top: 100%;
+    display: none;
+    position: absolute;
+    background-color: #ffffe6;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-box:hover .dropdown-content {
+    display: block;
+}
+
+
+/* end of properties of dropdown */
+
+
+/* properties of top-image  */
+
+.blog-logo-container {
+    /* how to divide whole window? and why it does not accept percentages value? 
+             for example I want to divide whole window to 4 sections*/
+    position: relative;
+    max-height: 600px;
+}
+
+.blog-logo-container img {
+    min-height: 350px;
+    max-height: 600px;
+    width: 100%;
+}
+
+.text-stick {
+    background-color: #000000;
+    color: #ffffff;
+    position: absolute;
+    /* which one is correct left and top value or left and bottom, zero value and margin? */
+    right: 2%;
+    top: 87%;
+    /* left: 0;
+            bottom: 0; */
+    padding: 10px 20px;
+    /* margin: 20px */
+}
+
+.text-stick h3 {
+    margin: 0;
+}
+
+
+/* end of properties of top-image  */
+
+
+/* team section  */
+
+.blog-team-section {
+    padding: 64px 16px;
+}
+
+p {
+    text-align: center;
+}
+
+.employee {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.employee img {
+    border-radius: 50%;
+    width: 45%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+/* end of team section  */
+
+
+/* work section */
+
+.blog-work-section {
+    background-color: #333333;
+    padding: 64px 8px
+}
+
+.work-img-description {
+    float: left;
+    width: 25%;
+    padding: 0px 8px;
+}
+
+.custom-align {
+    text-align: right;
+}
+
+.custom-justify {
+    text-justify: inter-word;
+}
+
+.work-img {
+    width: 100%;
+    height: 35%;
+}
+
+.work-description {
+    padding: 0 15px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.work-list {
+    padding: 0;
+    margin: 0;
+}
+
+.work-list li {
+    padding: 5px 0
+}
+
+
+/* sticky button section */
+
+.button-container {
+    position: relative;
+}
+
+.stick-button {
+    padding: 8px 16px;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    right: 24px;
+    top: -28px;
+    font-size: 24px;
+}
+
+
+/* end of sticky button section */
+
+.blog-price-section {
+    padding: 64px 8px;
+}
+
+.blog-price-description {
+    margin-top: 32px;
+}
+
+.price-detailes {
+    float: left;
+    width: 33.33%;
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+
+.price-list {
+    text-align: center;
+    border: 1px solid #cccccc;
+}
+
+.item-custom {
+    padding: 8px 16px;
+    font-size: 24px;
+}
+
+.price-items {
+    padding: 16px 16px;
+    border-bottom: 1px solid #cccccc;
+}
+
+
+/* .items-bBorder {
+            border-bottom: 1px solid #cccccc;
+        } */
+
+.price-items :last-child {
+    border-bottom: none
+}
+
+.price-list span {
+    font-family: 'VazirBold';
+}
+
+.custom-font {
+    font-size: 20px;
+}
+
+.custom-fColor {
+    color: #bfbfbf;
+}
+
+.blog-bColor-lGray {
+    background-color: #e6e6e6;
+}
+
+.price-items a {
+    padding: 8px 16px;
+    display: inline-block;
+}
+
+.custom-padding {
+    padding: 24px 0;
+}
+
+.price-list:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* contact section */
+
+.blog-contact-section {
+    padding: 64px 16px;
+    font-size: 18px;
+}
+
+.contact-info {
+    float: right;
+    width: 40%;
+}
+
+.contact-us {
+    float: left;
+    width: 60%;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.custom-header {
+    margin-top: 0;
+    width: 17%;
+    border-bottom: 3px solid #009688;
+}
+
+.contact-info i {
+    color: #009688;
+}
+
+.contact-us-list {
+    padding: 10px 16px 0;
+}
+
+.contact-us-list li {
+    padding: 10px 0 40px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.contact-us-list li:last-child {
+    border-bottom: none;
+    padding: 0;
+    clear: both;
+    display: table;
+    width: 100%;
+}
+
+.conatct-like {
+    margin: 20px 0;
+    float: right;
+    width: 50%;
+}
+
+.conatct-like p {
+    text-align: right;
+}
+
+.contact-send {
+    float: left;
+    margin: 20px 0;
+    width: 50%;
+    text-align: left;
+}
+
+.contact-send a {
+    padding: 5px 15px;
+}
+
+.blog-bottom-image {
+    max-height: 400px;
+}
+
+.blog-bottom-image img {
+    min-height: 250px;
+    max-height: 400px;
+    width: 100%;
+}
+
+.footer-navigation {
+    text-align: center;
+}
+
+.blog-footer {
+    padding: 32px 16px;
+}
+
+.footer-list li {
+    display: inline;
+}
+
+.footer-list a {
+    padding: 8px 16px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.link-footer {
+    text-decoration-line: underline;
+}

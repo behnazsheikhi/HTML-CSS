@@ -1,0 +1,280 @@
+/* this page is designed based on https://www.w3schools.com/w3css/tryw3css_templates_blog.htm */
+
+
+/* selected font for this website is vasir */
+
+
+/* for more information go to this lik 'https://rastikerdar.github.io/vazir-font/' */
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('../font/vasir/Vazir.woff2') format('woff2'), url('../font/vasir/Vazir.woff') format('woff'), url('../font/vasir/Vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirBold';
+    src: url('../font/vasir/Vazir-Bold.woff2') format('woff2'), url('../font/vasir/Vazir-Bold.woff') format('woff'), url('../font/vasir/Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* assign font-family and font size to the whole page */
+
+
+/* since website is designed in farsi, use direction rtl for all elements */
+
+html,
+body {
+    font-family: 'Vazir';
+    font-size: 15px;
+    direction: rtl;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h3,
+h4,
+.blog-text-bold {
+    font-family: 'VazirBold';
+}
+
+
+/* blog-main-conainer is a container for whole the page elements including header,main and footer*/
+
+.blog-main-conainer {
+    background-color: #f1f1f1;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.blog-header-container {
+    text-align: center;
+}
+
+.blog-padding-32 {
+    padding: 32px 16px;
+}
+
+h1,
+h3,
+h4,
+h5,
+p {
+    margin: 10px 0;
+}
+
+.containers-margin {
+    margin: 32px 0;
+}
+
+.blog-tag {
+    background-color: #000;
+    color: #FFFFFF;
+    padding: 0 8px;
+    text-align: center;
+    display: inline-block;
+}
+
+.blog-row,
+.sub-container {
+    width: 100%;
+}
+
+.blog-row::after,
+.sub-container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.blog-list {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* for mobile   */
+
+.body-right,
+.body-left {
+    width: 100%;
+}
+
+.containers-shadow {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #FFFFFF;
+}
+
+.blog-container {
+    padding: 5px 16px;
+}
+
+.blog-foorer-section {
+    background-color: #616161;
+    margin-top: 16px;
+    padding: 32px 16px;
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+    height: 50%;
+}
+
+.button-container {
+    width: 66.66%;
+    float: left;
+}
+
+.blog-border {
+    border: 1px solid #ccc;
+    background-color: #FFFFFF;
+}
+
+.comment-container {
+    width: 33.33%;
+    float: left;
+    padding: 20px 0;
+    display: none;
+}
+
+.top-container {
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+}
+
+.list-image {
+    margin-left: 16px;
+    width: 50px;
+    float: right;
+}
+
+.list-item {
+    border-bottom: 1px solid #ddd;
+    padding: 16px;
+    clear: both;
+    display: table;
+    content: "";
+    width: 100%;
+}
+
+.list-item:hover {
+    background-color: #808080;
+}
+
+.btn_footer {
+    border: none;
+    background-color: #000;
+    color: #FFFFFF;
+}
+
+.blog-opacity {
+    opacity: 0.3;
+}
+
+.blog-btn {
+    padding: 12px 24px;
+    font-family: 'VazirBold';
+}
+
+.blog-btn:hover {
+    background-color: #808080;
+}
+
+.btn_pointer {
+    cursor: pointer;
+}
+
+.btn_pointer:hover {
+    color: #000000;
+}
+
+.btn_opacity {
+    cursor: not-allowed;
+}
+
+footer p,
+a {
+    color: #FFFFFF;
+}
+
+.blog-padding-large {
+    padding: 12px 24px;
+}
+
+.blog-radius {
+    border-radius: 50%;
+}
+
+
+/* whole the page is right to left but some sections must be left to right */
+
+.blog-custom-direction {
+    text-align: left;
+}
+
+.font-large {
+    font-size: 18px;
+}
+
+.tags-margin {
+    margin-bottom: 16px;
+}
+
+.blog-tag-gray {
+    background-color: #f1f1f1;
+    color: #000000;
+    padding: 0 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.custom-border {
+    border-bottom: none;
+}
+
+.labels {
+    list-style-type: none;
+    clear: both;
+    display: table;
+}
+
+.labels-item {
+    margin-bottom: 12px;
+    margin-left: 5px;
+}
+
+.popular-topic {
+    margin: 0;
+}
+
+
+/* for tablet and desktop */
+
+@media only screen and (min-width: 800px) {
+    .body-left {
+        width: 66.66666%;
+        float: left;
+        padding-left: 16px;
+    }
+    .body-right {
+        width: 33.33%;
+        float: left;
+        padding-right: 16px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .comment-container {
+        display: inline-block;
+    }
+}
