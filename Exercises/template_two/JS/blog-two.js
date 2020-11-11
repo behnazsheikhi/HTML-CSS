@@ -25,16 +25,7 @@ function openSidebar() {
 function closeSidebar() {
     sidebarVar.style.display = "none";
 }
-
-function validateForm() {
-    var inputValue = document.getElementsByClassName("contact-input");
-    console.log(inputValue);
-    for (var i = 0; i <= inputValue.length; i++) {
-        if (inputValue[i].value() == "") {
-
-        }
-    }
-}
+// footer arrow up
 var GoTop = document.getElementById('arrow-go-to');
 var arrowUp = document.getElementById('arrow-up');
 arrowUp.onmouseover = function showGoTop() {

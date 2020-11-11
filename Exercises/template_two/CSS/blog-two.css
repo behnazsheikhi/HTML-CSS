@@ -90,12 +90,10 @@ a {
     background-color: #ffffff;
 }
 
-#arrow-go-to,
 .footer-list a,
 .price-items a,
 .blog-bColor-blue,
 .list-search:hover,
-.menu-list-bColor,
 #btn-modal:hover {
     background-color: #009688;
 }
@@ -107,17 +105,14 @@ a {
 #btn-submit:hover,
 .price-items a:hover,
 .blog-bColor-gray,
-.menu-list-bColor:hover,
+.menu-list-hColor:hover,
 .dropdown-content a:hover,
 .dropdown-box:hover,
 .stick-button:hover {
     background-color: #a6a6a6;
 }
 
-#btn-modal,
-.blog-footer,
-.blog-bColor-black,
-.blog-menu-container {
+.blog-bColor-black {
     background-color: #000000;
 }
 
@@ -200,8 +195,6 @@ a {
 }
 
 .text-stick {
-    background-color: #000000;
-    color: #ffffff;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -215,9 +208,6 @@ a {
     font-family: 'Vazir';
     font-size: 18px;
 }
-
-
-/* The Modal (background) */
 
 .modal {
     display: none;
@@ -233,8 +223,7 @@ a {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.close:hover,
-.close:focus {
+.close:hover {
     color: #000;
     text-decoration: none;
     cursor: pointer;
@@ -436,14 +425,9 @@ img {
 }
 
 .price-items {
-    padding: 16px 16px;
+    padding: 16px;
     border-bottom: 1px solid #cccccc;
 }
-
-
-/* .items-bBorder {
-            border-bottom: 1px solid #cccccc;
-        } */
 
 .price-items :last-child {
     border-bottom: none
