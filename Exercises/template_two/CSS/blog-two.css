@@ -44,11 +44,6 @@ a {
     text-decoration: none;
 }
 
-
-/* .blog-selected-padding {
-            padding: 8px 16px;
-        } */
-
 .custom-font {
     font-size: 24px;
     font-family: 'VazirBold';
@@ -282,8 +277,7 @@ p {
 }
 
 .employee {
-    float: left;
-    width: 25%;
+    width: 100%;
     text-align: center;
 }
 
@@ -318,8 +312,7 @@ h6 {
 }
 
 .work-img-description {
-    float: left;
-    width: 25%;
+    width: 100%;
     padding: 0px 8px;
 }
 
@@ -589,11 +582,13 @@ img {
 
 /* for desktop  */
 
-
-/* @media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
     .employee {
         float: left;
         width: 25%;
-      
     }
-}  */
+    .work-img-description {
+        float: left;
+        width: 25%;
+    }
+}
