@@ -75,9 +75,11 @@ a {
 
 /* .blog-fColor-black, */
 
+#arrow-up:hover,
+.sidebar-container a,
 .modal-main,
 .footer-list a:hover,
-.contact-send a:hover,
+#btn-submit:hover,
 .price-items a:hover,
 .stick-button:hover,
 .items-fColor:hover {
@@ -88,6 +90,7 @@ a {
     background-color: #ffffff;
 }
 
+#arrow-go-to,
 .footer-list a,
 .price-items a,
 .blog-bColor-blue,
@@ -97,8 +100,11 @@ a {
     background-color: #009688;
 }
 
+#arrow-up:hover,
+.sidebar-list li:hover,
+.close:hover,
 .footer-list a:hover,
-.contact-send a:hover,
+#btn-submit:hover,
 .price-items a:hover,
 .blog-bColor-gray,
 .menu-list-bColor:hover,
@@ -197,9 +203,6 @@ a {
     background-color: #000000;
     color: #ffffff;
     position: absolute;
-    /* which one is correct left and top value or left and bottom, zero value and margin? */
-    /* right: 2%;
-    top: 87%; */
     right: 0;
     bottom: 0;
     padding: 0 16px;
@@ -246,16 +249,20 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 15px 10px;
+    padding: 8px 20px;
+    display: inline-block;
 }
 
 
 /* Modal Content */
 
 .modal-content {
-    position: relative;
     margin: auto;
     width: 80%;
+}
+
+.modal-header {
+    position: relative;
 }
 
 .modal-content h4,
@@ -294,6 +301,10 @@ p {
 .employee img {
     border-radius: 50%;
     width: 45%;
+}
+
+.employee img:hover {
+    opacity: 0.5;
 }
 
 h1,
@@ -365,9 +376,35 @@ img {
     border-radius: 50%;
     text-align: center;
     position: absolute;
-    right: 24px;
+    left: 24px;
     top: -28px;
     font-size: 24px;
+}
+
+.sidebar-container {
+    display: none;
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0
+}
+
+.sidebar-list li {
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 20px;
+    text-align: right;
+}
+
+#list-first-item {
+    color: #009688;
+    font-size: 28px;
+}
+
+.sidebar-list li:first-child {
+    margin-bottom: 40px;
 }
 
 
@@ -470,31 +507,29 @@ img {
     color: #009688;
 }
 
-.contact-us-list {
-    padding: 10px 16px 0;
+.contact-us-form {
+    padding: 15px 20px;
 }
 
-.contact-us-list li {
-    padding: 10px 0 40px;
-    border-bottom: 1px solid #cccccc;
-}
-
-.contact-us-list li:last-child {
-    border-bottom: none;
-    padding: 0;
-    clear: both;
-    display: table;
+.contact-input {
     width: 100%;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    height: 40px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.contact-label {
+    width: 100%;
+    padding-top: 10px;
+    display: inline-block;
 }
 
 .conatct-like {
     margin: 20px 0;
     float: right;
     width: 50%;
-}
-
-.conatct-like p {
-    text-align: right;
 }
 
 .contact-send {
@@ -504,8 +539,12 @@ img {
     text-align: left;
 }
 
-.contact-send a {
+#btn-submit {
     padding: 5px 15px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Vazir';
 }
 
 .blog-bottom-image {
@@ -520,6 +559,7 @@ img {
 
 .footer-navigation {
     text-align: center;
+    position: relative;
 }
 
 .blog-footer {
@@ -539,3 +579,37 @@ img {
 .link-footer {
     text-decoration-line: underline;
 }
+
+.arrow-up-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    padding: 0;
+}
+
+#arrow-up {
+    float: left;
+    width: 30%;
+    padding: 8px;
+    font-size: 18px;
+}
+
+#arrow-go-to {
+    float: right;
+    width: 70%;
+    display: none;
+    margin: 8px 0px;
+}
+
+
+/* for desktop  */
+
+
+/* @media only screen and (min-width: 800px) {
+    .employee {
+        float: left;
+        width: 25%;
+      
+    }
+}  */
