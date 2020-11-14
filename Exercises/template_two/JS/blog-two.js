@@ -44,3 +44,14 @@ GoTop.onmouseover = function showGoTop() {
 GoTop.onmouseleave = function showGoTop() {
     GoTop.style.display = "none";
 }
+
+var menuRight = document.getElementById('list');
+
+function openMenu() {
+    if (menuRight.style.display == "block") {
+        menuRight.style.display = "none";
+    } else {
+        menuRight.style.display = "block";
+    }
+
+}
