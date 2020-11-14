@@ -366,7 +366,7 @@ img {
 .sidebar-container {
     display: none;
     height: 100%;
-    width: 15%;
+    max-width: 40%;
     position: fixed;
     z-index: 1;
     right: 0;
@@ -401,8 +401,7 @@ img {
 }
 
 .price-detailes {
-    float: left;
-    width: 33.33%;
+    width: 100%;
     padding: 0 8px;
     margin-bottom: 16px;
 }
@@ -464,13 +463,15 @@ img {
 }
 
 .contact-info {
-    float: right;
-    width: 40%;
+    /* float: right;
+    width: 40%; */
+    width: 100%;
 }
 
 .contact-us {
-    float: left;
-    width: 60%;
+    /* float: left;
+    width: 60%; */
+    width: 100%;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -588,7 +589,19 @@ img {
         width: 25%;
     }
     .work-img-description {
-        float: left;
+        float: right;
         width: 25%;
+    }
+    .price-detailes {
+        float: left;
+        width: 33.33%;
+    }
+    .contact-info {
+        float: right;
+        width: 40%;
+    }
+    .contact-us {
+        float: left;
+        width: 60%;
     }
 }
