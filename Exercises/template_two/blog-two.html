@@ -11,43 +11,43 @@
     <link rel="stylesheet" href="CSS/blog-two.css">
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="fontawesome/css/v4-shims.css">
-
 </head>
 
 <body class="blog-whole-container">
-    <main>
-        <!-- menu Container -->
-        <div class="blog-menu-container blog-bColor-black">
-            <nav>
-                <ul class="blog-main-menu blog-main-clear">
-                    <li class="menu-list menu-list-hColor blog-bColor-blue">
-                        <a class="items-fColor" href="#logo">
-                            <i class="fa fa-home menu-icon" aria-hidden="true"></i> نماد </a>
-                    </li>
-                    <li class="menu-list"><a class="items-fColor items-bColor" href="#team">اعضای تیم</a></li>
-                    <li class="menu-list"><a class="items-fColor items-bColor" href="#work">نمونه کار</a></li>
-                    <li class="menu-list"><a class="items-fColor items-bColor" href="#price">قیمت</a></li>
-                    <li class="menu-list"><a class="items-fColor items-bColor" href="#contact">تماس با ما</a></li>
-                    <!-- dropdown container -->
-                    <li class="menu-list dropdown-box">
-                        <a class="items-fColor dropdown-link">سایر موارد
-                            <i class="fa fa-sort-down" aria-hidden="true"></i>
-                        </a>
-                        <!-- dropdown items -->
-                        <div class="dropdown-content">
-                            <a href="#logo">لینک</a>
-                            <a href="#logo">لینک</a>
-                            <a href="#logo">لینک</a>
-                        </div>
-                    </li>
-                    <!-- end of dropdown container -->
-                    <li class="list-search">
-                        <a class="items-fColor" href="" title="جستجو">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+    <!-- menu Container -->
+    <header>
+        <div class="blog-menu-container blog-bColor-black blog-main-clear">
+            <div class="menu-right">
+                <nav>
+                    <ul class="blog-main-menu blog-main-clear">
+                        <li class="menu-list menu-list-hColor blog-bColor-blue">
+                            <a class="items-fColor" href="#logo">
+                                <i class="fa fa-home menu-icon" aria-hidden="true"></i> نماد </a>
+                        </li>
+                        <li class="menu-list"><a class="items-fColor items-bColor" href="#team">اعضای تیم</a></li>
+                        <li class="menu-list"><a class="items-fColor items-bColor" href="#work">نمونه کار</a></li>
+                        <li class="menu-list"><a class="items-fColor items-bColor" href="#price">قیمت</a></li>
+                        <li class="menu-list"><a class="items-fColor items-bColor" href="#contact">تماس با ما</a></li>
+                        <!-- dropdown container -->
+                        <li class="menu-list dropdown-box">
+                            <a class="items-fColor dropdown-link">سایر موارد
+                                <i class="fa fa-sort-down" aria-hidden="true"></i>
+                            </a>
+                            <!-- dropdown items -->
+                            <ul class="dropdown-content">
+                                <li><a href="#logo">لینک</a></li>
+                                <li><a href="#logo">لینک</a></li>
+                                <li><a href="#logo">لینک</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-left">
+                <a class="custom-link items-fColor" href="#" title="جستجو">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
 
         <div class="blog-menu-container-responsive blog-bColor-black">
@@ -58,7 +58,7 @@
                     </a>
                 </div>
                 <div class="menu-left-side" onclick="openMenu()">
-                    <a href="#">
+                    <a class="custom-link" href="#">
                         <i class="fa fa-bars" aria-hidden="true"></i>
                     </a>
                 </div>
@@ -85,8 +85,12 @@
 
         </div>
 
+    </header>
 
-        <!-- end of menu Container -->
+    <!-- end of menu Container -->
+
+    <main>
+
         <!-- image container -->
         <div id="logo" class="blog-logo-container">
             <img src="images/sailboat.jpg" alt="نماد وب سایت!">
@@ -220,7 +224,7 @@
             <h2>لیست قیمت ها</h2>
             <h4>طرح مناسب را بر اساس کسب و کار خود انتخاب نمایید</h4>
             <div class="blog-price-description blog-main-clear ">
-                <section class="price-detailes ">
+                <div class="price-detailes ">
                     <ul class="price-list ">
                         <li class="item-custom blog-bColor-black blog-fColor-white ">
                             <p>قیمت ممتاز </p>
@@ -236,8 +240,8 @@
                             <a class="custom-font" href="# "> ثبت نام <i class="fa fa-check" aria-hidden="true"></i></a>
                         </li>
                     </ul>
-                </section>
-                <section class="price-detailes ">
+                </div>
+                <div class="price-detailes ">
                     <ul class="price-list ">
                         <li class="item-custom blog-bColor-gray blog-fColor-white ">
                             <p>قیمت حرفه ای</p>
@@ -253,8 +257,8 @@
                             <a class="custom-font" href="# "> ثبت نام <i class="fa fa-check " aria-hidden="true"></i></a>
                         </li>
                     </ul>
-                </section>
-                <section class="price-detailes ">
+                </div>
+                <div class="price-detailes ">
                     <ul class="price-list ">
                         <li class="item-custom items-bBorder blog-bColor-black blog-fColor-white ">
                             <p> قیمت پایه </p>
@@ -270,7 +274,7 @@
                             <a class="custom-font" href="# "> ثبت نام <i class="fa fa-check " aria-hidden="true"></i></a>
                         </li>
                     </ul>
-                </section>
+                </div>
             </div>
         </div>
         <!-- end of price section -->
@@ -292,7 +296,8 @@
                         <label class="contact-label ">ایمیل</label>
                         <input class="contact-input blog-main-bColor" type="text" name="email" required>
                         <label class="contact-label">پیام</label>
-                        <input class="contact-input blog-main-bColor" type="text" name="message" required>
+                        <textarea class="contact-input blog-main-bColor" name="message" required>
+                        </textarea>
                         <div class="contact-footer blog-main-clear">
                             <div class="conatct-like">
                                 <input type="checkbox">

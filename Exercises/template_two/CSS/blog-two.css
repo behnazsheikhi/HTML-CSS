@@ -26,12 +26,21 @@
     box-sizing: border-box;
 }
 
-body {
+body,
+html {
     font-family: 'Vazir';
     font-size: 15px;
     direction: rtl;
+}
+
+.blog-whole-container {
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 1200px;
+}
+
+header {
+    display: block;
+    position: relative;
 }
 
 ul {
@@ -80,11 +89,12 @@ a {
     color: #000000;
 }
 
-.menu-left-side a:hover,
+.menu-left-side:hover,
 .items-bColor:hover {
     background-color: #ffffff;
 }
 
+.menu-left:hover,
 .footer-list a,
 .price-items a,
 .blog-bColor-blue,
@@ -102,7 +112,7 @@ a {
 .price-items a:hover,
 .blog-bColor-gray,
 .menu-list-hColor:hover,
-.dropdown-content a:hover,
+.dropdown-content li:hover,
 .dropdown-box:hover,
 .stick-button:hover {
     background-color: #a6a6a6;
@@ -113,10 +123,23 @@ a {
 }
 
 .blog-menu-container {
+    display: none;
     position: fixed;
-    width: 100%;
     top: 0;
     z-index: 1;
+    max-width: 1200px;
+}
+
+.menu-right {
+    float: right;
+    width: 90%;
+}
+
+.menu-left {
+    float: left;
+    padding: 8px 16px;
+    margin: 0;
+    text-align: left;
 }
 
 .blog-main-menu {
@@ -128,24 +151,22 @@ a {
 .blog-menu-container-responsive {
     display: block;
     position: fixed;
-    width: 100%;
     top: 0;
     z-index: 1;
-}
-
-.blog-menu-container {
-    display: none;
+    width: 100%;
 }
 
 .menu-right-side {
-    width: 93%;
+    width: 50%;
     float: right;
 }
 
 .menu-left-side {
-    width: 7%;
+    width: 50%;
     float: left;
-    text-align: center;
+    text-align: left;
+    padding: 8px 16px;
+    margin: 0;
 }
 
 .menu-right-list {
@@ -160,7 +181,7 @@ a {
     width: 100%
 }
 
-.blog-menu-container-responsive a {
+.menu-right-side a {
     padding: 8px 16px;
     display: inline-block;
 }
@@ -168,10 +189,6 @@ a {
 .blog-main-menu a {
     padding: 8px 16px;
     display: inline-block;
-}
-
-.list-search {
-    float: left;
 }
 
 .menu-icon {
@@ -498,14 +515,10 @@ img {
 }
 
 .contact-info {
-    /* float: right;
-    width: 40%; */
     width: 100%;
 }
 
 .contact-us {
-    /* float: left;
-    width: 60%; */
     width: 100%;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -522,6 +535,12 @@ img {
 
 .contact-us-form {
     padding: 15px 20px;
+}
+
+textarea {
+    text-align: right;
+    overflow-y: scroll;
+    resize: none;
 }
 
 .contact-input {
@@ -641,6 +660,11 @@ img {
     }
     .blog-menu-container {
         display: block;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        /* max-width: 1200px; */
+        width: 100%;
     }
     .menu-list {
         float: right;
