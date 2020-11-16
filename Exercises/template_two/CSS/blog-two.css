@@ -22,6 +22,14 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "FontAwesome";
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fontawesome/webfonts/fa-brands-400.svg") format("svg"), url("../fontawesome/webfonts/fa-brands-400.eot") format("embedded-opentype"), url("../fontawesome/webfonts/fa-brands-400.ttf") format("truetype"), url("../fontawesome/webfonts/fa-brands-400.woff") format("woff"), url("../fontawesome/webfonts/fa-brands-400.woff2") format("woff2"), url("../fontawesome/webfonts/fa-regular-400.eot") format("embedded-opentype"), url("../fontawesome/webfonts/fa-regular-400.svg") format("svg"), url("../fontawesome/webfonts/fa-regular-400.ttf") format("truetype"), url("../fontawesome/webfonts/fa-regular-400.woff") format("woff"), url("../fontawesome/webfonts/fa-regular-400.woff2") format("woff2"), url("../fontawesome/webfonts/fa-solid-400.eot") format("embedded-opentype"), url("../fontawesome/webfonts/fa-solid-400.svg") format("svg"), url("../fontawesome/webfonts/fa-solid-400.ttf") format("truetype"), url("../fontawesome/webfonts/fa-solid-400.woff") format("woff"), url("../fontawesome/webfonts/fa-solid-400.woff2") format("woff2"),
+}
+
 * {
     box-sizing: border-box;
 }
@@ -51,6 +59,10 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+i {
+    font-family: "FontAwesome";
 }
 
 .custom-font {
