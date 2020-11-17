@@ -41,8 +41,9 @@ html {
 
 .header-img {
     background-color: red;
+    margin: 5px auto;
     height: 50٪;
-    width: 100%;
+    width: 40%;
 }
 
 .header-menu {
@@ -77,6 +78,7 @@ html {
 
 .header-date-title {
     height: 40%;
+    padding-bottom: 5px;
 }
 
 .body-first-container {
@@ -276,16 +278,13 @@ h3 {
 }
 
 .footer-right-elements {
-    /* float: right; */
     width: 100%;
     height: 100%;
     padding-bottom: 10px;
 }
 
 .footer-left-elements {
-    /* float: left; */
     width: 100%;
-    /* padding-right: 8%; */
     height: 100%;
 }
 
@@ -295,6 +294,7 @@ h3 {
         background-color: red;
         height: 150px;
         width: 15%;
+        margin: 0;
     }
     .header-date-menu {
         float: right;
