@@ -407,4 +407,10 @@ h3 {
         padding-right: 8%;
         height: 100%;
     }
+    .body-second-section {
+        height: 400px;
+    }
+    .body-fourth-container {
+        height: 210px;
+    }
 }
