@@ -206,6 +206,12 @@ ul {
     padding-bottom: 10px;
 }
 
+.fourth-subcontainer-ads {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+}
+
 .fourth-subcontainer {
     height: 100%;
     width: 100%;
@@ -350,16 +356,22 @@ h3 {
         padding: 5px;
         height: 100%;
     }
+    .fourth-subcontainer-ads {
+        float: right;
+        width: 20%;
+        height: 100%;
+    }
     .fourth-subcontainer-left {
-        float: left;
-        width: 35%;
+        float: right;
+        width: 30%;
         height: 100%;
         padding-right: 10px;
     }
     .fourth-subcontainer-right {
         float: right;
-        width: 65%;
+        width: 50%;
         height: 100%;
+        padding-right: 10px;
     }
     .fourth-subcontainer-right li {
         float: right;
