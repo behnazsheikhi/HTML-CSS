@@ -28,11 +28,13 @@ html {
 .blog-whole-container {
     margin: 0 auto;
     max-width: 1600px;
+    padding: 0 8px;
 }
 
 .blog-inner-container {
     margin: 0 auto;
     max-width: 1200px;
+    padding: 0 8px;
 }
 
 .blog-header-container {
