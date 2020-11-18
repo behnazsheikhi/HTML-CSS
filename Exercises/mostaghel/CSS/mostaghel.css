@@ -131,12 +131,10 @@ html {
 
 .body-second-container {
     margin: 10px 0;
-    /* padding: 0 10%; */
 }
 
 .second-left {
     width: 100%;
-    /* padding-bottom: 10px; */
     height: 100%;
 }
 
@@ -191,8 +189,6 @@ ul {
 
 .body-fourth-container {
     padding: 10px 0;
-    /* padding-left: 20%;
-    padding-right: 10%; */
     width: 100%;
     max-height: 600px;
 }
@@ -299,11 +295,6 @@ h3 {
         margin: 10px auto;
         width: 60%;
     }
-    /* .left-section {
-        float: left;
-        width: 50%;
-        height: 100%;
-    } */
     .right-section {
         padding: 0;
         float: right;
@@ -367,7 +358,6 @@ h3 {
         float: right;
         width: 65%;
         height: 100%;
-        /* max-height: 600px; */
     }
     .fourth-subcontainer-right li {
         float: right;
