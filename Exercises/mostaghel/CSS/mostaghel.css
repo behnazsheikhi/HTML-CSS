@@ -27,6 +27,11 @@ html {
 
 .blog-whole-container {
     margin: 0 auto;
+    max-width: 1600px;
+}
+
+.blog-inner-container {
+    margin: 0 auto;
     max-width: 1200px;
 }
 
@@ -35,7 +40,7 @@ html {
 }
 
 .header-elements {
-    margin: 0 10%;
+    margin: 0;
     background-color: #000000;
 }
 
@@ -93,13 +98,19 @@ html {
 
 .first-bottom-section {
     margin-top: 10px;
-    margin-right: 10%;
-    margin-left: 20%;
+    margin-right: 0;
+    /* margin-left: 10%; */
     max-height: 300px;
     margin-bottom: 10px;
 }
 
-.left-section {
+.first-bottom-middle {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+.first-bottom-left {
     width: 100%;
     height: 100%;
 }
@@ -107,24 +118,6 @@ html {
 .right-section {
     padding-bottom: 10px;
     width: 100%;
-    height: 100%;
-}
-
-.first-bottom-left {
-    float: left;
-    width: 60%;
-    padding-right: 10px;
-    height: 100%;
-}
-
-.first-bottom-middle {
-    float: right;
-    width: 40%;
-    height: 100%;
-}
-
-.first-bottom-right {
-    width: 50%;
     height: 100%;
 }
 
@@ -138,12 +131,12 @@ html {
 
 .body-second-container {
     margin: 10px 0;
-    padding: 0 10%;
+    /* padding: 0 10%; */
 }
 
 .second-left {
     width: 100%;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
     height: 100%;
 }
 
@@ -156,6 +149,7 @@ html {
 .second-right {
     width: 100%;
     height: 100%;
+    padding-bottom: 10px;
 }
 
 .body-second-section {
@@ -166,7 +160,7 @@ html {
     background-color: lightgray;
     max-height: 600px;
     width: 100%;
-    padding: 5px 10%;
+    padding: 5px 0;
 }
 
 .third-title {
@@ -197,8 +191,8 @@ ul {
 
 .body-fourth-container {
     padding: 10px 0;
-    padding-left: 20%;
-    padding-right: 10%;
+    /* padding-left: 20%;
+    padding-right: 10%; */
     width: 100%;
     max-height: 600px;
 }
@@ -244,7 +238,7 @@ h3 {
 
 .body-fifth-container {
     background-color: slategrey;
-    padding: 10px 10%;
+    padding: 10px 0;
     max-height: 500px;
 }
 
@@ -266,13 +260,11 @@ h3 {
 
 .body-footer-container {
     background-color: black;
-    padding-right: 10%;
-    padding-left: 30%;
     max-height: 500px;
 }
 
 .footer-elements {
-    padding: 10px 0;
+    padding: 5% 30%;
     height: 100%;
     width: 100%;
 }
@@ -280,12 +272,12 @@ h3 {
 .footer-right-elements {
     width: 100%;
     height: 100%;
-    padding-bottom: 10px;
 }
 
 .footer-left-elements {
     width: 100%;
     height: 100%;
+    padding-bottom: 10px;
 }
 
 @media only screen and (min-width: 800px) {
@@ -307,11 +299,11 @@ h3 {
         margin: 10px auto;
         width: 60%;
     }
-    .left-section {
+    /* .left-section {
         float: left;
         width: 50%;
         height: 100%;
-    }
+    } */
     .right-section {
         padding: 0;
         float: right;
@@ -319,14 +311,14 @@ h3 {
         height: 100%;
     }
     .first-bottom-left {
-        float: left;
-        width: 60%;
+        float: right;
+        width: 30%;
         padding-right: 10px;
         height: 100%;
     }
     .first-bottom-middle {
         float: right;
-        width: 40%;
+        width: 20%;
         padding-right: 10px;
         height: 100%;
     }
@@ -341,21 +333,21 @@ h3 {
         height: 50%;
     }
     .second-left {
-        float: left;
+        float: right;
         width: 30%;
         padding-bottom: 0;
         padding-right: 10px;
         height: 100%;
     }
     .second-middle {
-        float: left;
+        float: right;
         width: 50%;
         padding-bottom: 0;
         padding-right: 10px;
         height: 100%;
     }
     .second-right {
-        float: left;
+        float: right;
         width: 20%;
         height: 100%;
     }
@@ -412,5 +404,18 @@ h3 {
     }
     .body-fourth-container {
         height: 210px;
+    }
+    .first-bottom-section {
+        margin-top: 10px;
+        margin-right: 0;
+        margin-left: 10%;
+        max-height: 300px;
+        margin-bottom: 10px;
+    }
+    .footer-elements {
+        padding-right: 0;
+        padding-top: 10px;
+        padding-left: 20%;
+        height: 100%;
     }
 }
