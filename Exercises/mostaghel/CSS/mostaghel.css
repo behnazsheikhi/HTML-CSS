@@ -34,16 +34,19 @@ ul {
     list-style-type: none;
 }
 
-a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
 body,
 html {
     font-family: 'Vazir';
     font-size: 15px;
     direction: rtl;
+}
+
+.blog-border-gray {
+    border: 1px solid #d9d9d9;
+}
+
+.blog-bColor-white {
+    background-color: #ffffff;
 }
 
 .blog-fColor-white {
@@ -98,7 +101,6 @@ html {
 }
 
 .header-left-container {
-    /* float: right; */
     width: 100%;
 }
 
@@ -171,6 +173,11 @@ html {
     border-bottom: none;
 }
 
+.header-list a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .header-list-items {
     border: 1px solid #333333;
     text-align: center;
@@ -217,46 +224,157 @@ html {
 /* header */
 
 .body-first-container {
-    background-color: lightgray;
+    background-color: #e6e6e6;
 }
+
+
+/* first section */
+
+
+/* top container موضوعات داغ */
 
 .first-popular-topics {
-    background-color: gray;
-    margin: 10px auto;
+    font-size: 12px;
+    margin: 0 auto;
     width: 100%;
+    padding-top: 20px;
 }
 
-.first-bottom-section {
-    margin-top: 10px;
-    margin-right: 0;
-    /* margin-left: 10%; */
-    max-height: 300px;
-    margin-bottom: 10px;
+.first-list-items {
+    font-family: 'VazirBold';
+    float: right;
+    margin: 0 5px;
+    margin-bottom: 5px;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.first-list-items:first-child {
+    padding: 0;
+    background-color: #e6e6e6;
+    color: #ff0000;
+}
+
+.first-list-items i {
+    padding: 6px;
+    background-color: #ff0000;
+    margin-left: 3px;
+    color: #ffffff;
+}
+
+.first-right-container-header {
+    text-align: center;
+    margin: 15px 10px;
+    width: 20%;
+    background-color: #ffaa00;
+    border-radius: 5px;
+}
+
+h2 {
+    padding-right: 10px;
+    margin: 30px 0;
+}
+
+.first-right-image {
+    text-align: center;
+}
+
+.first-right-text {
+    padding: 15px 10px;
+}
+
+.text {
+    margin: 0;
+    text-align: justify;
+}
+
+.date {
+    font-size: 12px;
+    color: #ff0000;
 }
 
 .first-bottom-middle {
     width: 100%;
     height: 100%;
-    padding-bottom: 10px;
+}
+
+.middle-top {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    /* height: 50%; */
+}
+
+.middle-bottom {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    /* height: 50%; */
+}
+
+.first-bottom-middle h4 {
+    color: #ff0000;
+    margin-top: 10px;
 }
 
 .first-bottom-left {
     width: 100%;
     height: 100%;
+    margin-bottom: 10px;
 }
 
 .right-section {
-    padding-bottom: 10px;
+    /* flex: 1; */
+    margin-bottom: 10px;
+    /* padding-bottom: 20px; */
     width: 100%;
     height: 100%;
 }
 
-.middle-top {
-    height: 50%;
+
+/* .first-bottom-middle {
+    flex: 1;
 }
 
-.middle-bottom {
-    height: 50%;
+.first-bottom-left {
+    flex: 1;
+} */
+
+.first-left {
+    border-top: 5px solid #b30000;
+}
+
+.first-left-header {
+    padding: 5px 0;
+    text-align: center;
+    margin: 10px;
+    width: 40%;
+    background-color: #b30000;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.firs-left-list {
+    color: #000000;
+    margin-top: 20px;
+}
+
+.firs-left-list a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.firs-left-list li {
+    padding: 0 10px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.firs-left-list p {
+    margin: 10px 0;
+}
+
+.firs-left-list li:last-child {
+    border-bottom: none;
 }
 
 .body-second-container {
@@ -472,16 +590,47 @@ h3 {
     .header-container-responsive {
         display: none;
     }
+    /* first section */
+    /* top container موضوعات داغ */
     .first-popular-topics {
-        background-color: gray;
-        margin: 10px auto;
+        font-size: 16px;
+        margin: 0 auto;
         width: 60%;
+        padding-top: 20px;
     }
+    .first-list-items {
+        margin: 0 10px;
+        float: right;
+        margin-bottom: 0;
+    }
+    /* top container موضوعات داغ */
     .right-section {
         padding: 0;
         float: right;
         width: 50%;
         height: 100%;
+    }
+    .first-bottom-section {
+        padding-top: 10px;
+        padding-bottom: 25px;
+        padding-left: 10%;
+    }
+    .first-right-image-container {
+        padding: 0 10px;
+        padding-bottom: 15%;
+    }
+    .first-right-image {
+        display: flex;
+        float: right;
+        width: 60%;
+    }
+    .first-right-image img {
+        width: 100%;
+        height: 100%;
+    }
+    .first-right-text {
+        float: right;
+        width: 40%;
     }
     .first-bottom-left {
         float: right;
@@ -500,9 +649,12 @@ h3 {
         height: 100%;
     }
     .middle-top {
+        text-align: right;
+        margin-bottom: 20px;
         height: 50%;
     }
     .middle-bottom {
+        text-align: right;
         height: 50%;
     }
     .second-left {
@@ -582,13 +734,6 @@ h3 {
     }
     .body-fourth-container {
         height: 210px;
-    }
-    .first-bottom-section {
-        margin-top: 10px;
-        margin-right: 0;
-        margin-left: 10%;
-        max-height: 300px;
-        margin-bottom: 10px;
     }
     .footer-elements {
         padding-right: 0;
