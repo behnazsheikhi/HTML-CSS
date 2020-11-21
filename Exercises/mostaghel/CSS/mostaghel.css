@@ -91,7 +91,8 @@ html {
     width: 100%;
 }
 
-img {
+.header-img img {
+    width: 100%;
     margin: 0 auto;
     height: 100%;
     object-fit: cover;
