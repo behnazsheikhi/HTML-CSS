@@ -9,34 +9,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> طراحی سایت مستقل</title>
     <link rel="stylesheet" href="CSS/mostaghel.css">
-    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="JS"></script>
 </head>
 
 <body class="blog-whole-container">
     <!-- header -->
-    <header class="blog-header-container">
-        <div class="blog-inner-container">
-            <div class="header-elements blog-main-clear">
-                <div class="header-img">
-                    <div style="text-align: center;font-size: 24px">
-                        image </div>
-                </div>
-                <div class="header-date-menu">
-                    <div class="header-date-title blog-main-clear">
-                        <div class="header-title" style="text-align: center; font-size: 24px;">
-                            title
-                        </div>
-                        <div class="header-date" style="text-align: center;font-size: 24px;">
-                            date
+    <header>
+        <div class="blog-header-container">
+            <div class="blog-inner-container">
+                <div class="header-elements blog-main-clear blog-fColor-white">
+                    <div class="header-img">
+                        <img src="images/logo.png" alt="لوگوی وب سایت">
+                    </div>
+                    <div class="header-left-container">
+                        <div class="header-date-menu">
+                            <div class="header-date-title blog-main-clear">
+                                <div class="header-title">
+                                    کرونا در چین درمان شد
+                                </div>
+                                <div class="header-date-search blog-main-clear ">
+                                    <div class="header-date blog-main-clear">
+                                        <div class="gregorian-date ">
+                                            November 16 2020
+                                        </div>
+                                        <div class="date-seprator">
+                                            <div id="circle"></div>
+                                        </div>
+                                        <div class="solar-date">
+                                            دوشنبه ۲۶ آبان ۱۳۹۹
+                                        </div>
+                                    </div>
+                                    <div class="header-search blog-bColor-red">
+                                        <a href="#" title="جستجو">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-menu">
+                                <nav>
+                                    <ul class="header-list blog-main-clear">
+                                        <li class="header-list-items">
+                                            <a href="#main">صفحه نخست</a></li>
+                                        <li class="header-list-items">
+                                            <a href="#political">سیاسی<i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+                                        <li class="header-list-items">
+                                            <a href="#international">بین الملل</a></li>
+                                        <li class="header-list-items">
+                                            <a href="#social">اجتماعی<i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+                                        <li class="header-list-items">
+                                            <a href="#economy">اقتصادی<i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+                                        <li class="header-list-items">
+                                            <a href="#culture">فرهنگ<i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+                                        <li class="header-list-items">
+                                            <a href="#sport">ورزشی<i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+                                        <li class="header-list-items">
+                                            <a href="#multimedia">چندرسانه ای</a></li>
+                                        <li class="header-list-items">
+                                            <a href="#person">چهره ها</a></li>
+                                        <li class="header-list-items">
+                                            <a href="#diversity">گوناگون</a>
+                                        </li>
+                                        <li class="header-list-items">
+                                            <a href="#about-us">درباره ما</a>
+                                        </li>
+                                        <li class="header-list-items">
+                                            <a href="#contact-us">تماس با ما</a>
+                                        </li>
+                                        <li class="header-list-items">
+                                            <a href="#other-media">رسانه های دیگر</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+
+                            <div id="open-menu-responsive" onclick="openMenu()" class="header-container-responsive"><i class="fa fa-bars menu-icon" aria-hidden="true"></i>دسته بندی ها
+                                <div id="menu-responsive" class="header-menu-responsive">
+                                    <nav>
+                                        <ul class="header-list blog-main-clear">
+                                            <li class="header-list-items">
+                                                <a href="#main">صفحه نخست</a></li>
+                                            <li class="header-list-items">
+                                                <a href="#political">سیاسی<i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+                                            <li class="header-list-items">
+                                                <a href="#international">بین الملل</a></li>
+                                            <li class="header-list-items">
+                                                <a href="#social">اجتماعی<i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+                                            <li class="header-list-items">
+                                                <a href="#economy">اقتصادی<i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+                                            <li class="header-list-items">
+                                                <a href="#culture">فرهنگ<i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+                                            <li class="header-list-items">
+                                                <a href="#sport">ورزشی<i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+                                            <li class="header-list-items">
+                                                <a href="#multimedia">چندرسانه ای</a></li>
+                                            <li class="header-list-items">
+                                                <a href="#person">چهره ها</a></li>
+                                            <li class="header-list-items">
+                                                <a href="#diversity">گوناگون</a>
+                                            </li>
+                                            <li class="header-list-items">
+                                                <a href="#about-us">درباره ما</a>
+                                            </li>
+                                            <li class="header-list-items">
+                                                <a href="#contact-us">تماس با ما</a>
+                                            </li>
+                                            <li class="header-list-items">
+                                                <a href="#other-media">رسانه های دیگر</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+
+
+
                         </div>
                     </div>
-                    <div class="header-menu style=" style="text-align: center;font-size: 24px;padding-top:15px;"> menu
-                    </div>
+
                 </div>
             </div>
-        </div>
 
+        </div>
     </header>
+
     <!-- header -->
     <main>
         <!-- body-first-container -->
@@ -192,6 +289,7 @@
         </div>
 
     </footer>
+    <script src="JS/mostaghel.js"></script>
 </body>
 
 </html>

@@ -14,8 +14,29 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url("../font-awesome-4.7.0/fonts/fontawesome-webfont.svg") format("svg"), url("../font-awesome-4.7.0/fonts/fontawesome-webfont.eot") format("embedded-opentype"), url("../font-awesome-4.7.0/fonts/fontawesome-webfont.ttf") format("truetype"), url("../font-awesome-4.7.0/fonts/fontawesome-webfont.woff") format("woff"), url("../font-awesome-4.7.0/fonts/fontawesome-webfont.woff2") format("woff2"),
+}
+
 * {
     box-sizing: border-box;
+}
+
+i::after {
+    font-family: "Font Awesome 5 Free";
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 body,
@@ -23,6 +44,14 @@ html {
     font-family: 'Vazir';
     font-size: 15px;
     direction: rtl;
+}
+
+.blog-fColor-white {
+    color: #ffffff;
+}
+
+.blog-bColor-red {
+    background-color: #ff0000;
 }
 
 .blog-whole-container {
@@ -38,24 +67,9 @@ html {
 }
 
 .blog-header-container {
+    border-top: 5px solid #ff0000;
     background-color: #000000;
-}
-
-.header-elements {
-    margin: 0;
-    background-color: #000000;
-}
-
-.header-img {
-    background-color: red;
-    margin: 5px auto;
-    height: 50٪;
-    width: 40%;
-}
-
-.header-menu {
-    background-color: dimgray;
-    height: 60%;
+    font-size: 14px;
 }
 
 .blog-main-clear::after {
@@ -64,29 +78,139 @@ html {
     content: "";
 }
 
+
+/* header */
+
+.header-elements {
+    margin: 0;
+    background-color: #000000;
+}
+
+.header-img {
+    text-align: center;
+    width: 100%;
+}
+
+img {
+    margin: 0 auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-left-container {
+    /* float: right; */
+    width: 100%;
+}
+
 .header-date-menu {
-    height: 50٪;
     width: 100%;
 }
 
 .header-title {
-    background-color: cadetblue;
-    float: right;
-    width: 50%;
+    font-family: 'VazirBold';
+    padding-left: 10px;
+    width: 100%;
     height: 100%;
+    text-align: center;
 }
 
-.header-date {
-    background-color: cyan;
-    float: left;
-    width: 50%;
+.header-date-search {
+    width: 100%;
     height: 100%;
+    font-size: 12px;
+    padding: 10px 0;
 }
 
 .header-date-title {
-    height: 40%;
-    padding-bottom: 5px;
+    height: 50%;
+    padding: 15px 5px 5px;
 }
+
+.header-date {
+    padding: 5px;
+    width: 92%;
+    float: right;
+    padding-left: 10px;
+}
+
+.header-search {
+    padding: 5px;
+    float: right;
+    width: 8%;
+    text-align: center;
+}
+
+.gregorian-date {
+    float: left;
+}
+
+.date-seprator {
+    padding-top: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+    float: left;
+}
+
+#circle {
+    border-radius: 50%;
+    background-color: #ff0000;
+    padding: 2px;
+}
+
+.solar-date {
+    float: left;
+}
+
+
+/* header-menu */
+
+.header-menu {
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    display: none;
+    border-bottom: none;
+}
+
+.header-list-items {
+    border: 1px solid #333333;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.header-list-items i {
+    font-size: 10px;
+    padding-right: 2px;
+}
+
+.header-container-responsive {
+    padding: 8px 0;
+    text-align: center;
+    width: 100%;
+    height: 60%;
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    position: relative;
+}
+
+.header-menu-responsive {
+    display: none;
+    right: 0;
+    top: 39px;
+    text-align: right;
+    width: 100%;
+    position: absolute;
+    background-color: #1a1a1a;
+}
+
+.menu-icon {
+    padding-left: 10px;
+}
+
+
+/* header-menu */
+
+
+/* header */
 
 .body-first-container {
     background-color: lightgray;
@@ -284,19 +408,65 @@ h3 {
     padding-bottom: 10px;
 }
 
+
+/* for desktop */
+
 @media only screen and (min-width: 800px) {
+    .header-elements {
+        margin: 0;
+        min-height: 98px;
+    }
     .header-img {
+        max-height: 98px;
         float: right;
-        background-color: red;
-        height: 150px;
         width: 15%;
         margin: 0;
     }
-    .header-date-menu {
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .header-left-container {
         float: right;
-        height: 150px;
         width: 85%;
-        padding-top: 50px;
+        height: 100%;
+    }
+    .header-date-menu {
+        width: 100%;
+        margin-top: 11px;
+    }
+    .header-title {
+        float: right;
+        width: 50%;
+        height: 100%;
+        text-align: right;
+    }
+    .header-date-search {
+        float: right;
+        width: 50%;
+        height: 100%;
+        padding: 0;
+    }
+    .header-date {
+        width: 92%;
+        float: right;
+        text-align: left;
+    }
+    .header-menu {
+        display: block;
+        height: 50%;
+    }
+    .header-list-items {
+        border: 0;
+        float: right;
+        padding: 8px 10px;
+    }
+    .header-list-items:first-child {
+        padding-right: 0px;
+    }
+    .header-container-responsive {
+        display: none;
     }
     .first-popular-topics {
         background-color: gray;
