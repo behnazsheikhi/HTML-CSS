@@ -92,7 +92,6 @@ html {
 }
 
 .header-img img {
-    width: 100%;
     margin: 0 auto;
     height: 100%;
     object-fit: cover;
@@ -176,6 +175,10 @@ html {
     border: 1px solid #333333;
     text-align: center;
     padding: 8px 0;
+}
+
+.header-list-items:hover {
+    background-color: #595959;
 }
 
 .header-list-items i {
