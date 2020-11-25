@@ -163,14 +163,12 @@ html {
     font-family: 'IRANSansWeb-Bold';
     padding-top: 8px;
     width: 100%;
-    height: 100%;
     text-align: center;
     font-size: 12px;
 }
 
 .header-date-search {
     width: 100%;
-    height: 100%;
     font-size: 12px;
     padding-top: 10px;
     padding-left: 5px;
@@ -400,7 +398,6 @@ html {
 
 .first-bottom-middle {
     width: 100%;
-    height: 100%;
 }
 
 .middle-top a {
@@ -444,14 +441,11 @@ html {
 
 .first-bottom-left {
     width: 100%;
-    height: 100%;
     margin-bottom: 10px;
 }
 
 .right-section {
-    padding-left: 8px;
     width: 100%;
-    height: 100%;
 }
 
 .first-left {
@@ -542,7 +536,6 @@ html {
 .sr-list-topics,
 .sr-list-items {
     width: 100%;
-    height: 100%;
 }
 
 .sr-list-items {
@@ -832,11 +825,10 @@ html {
     bottom: 0;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
+    color: #ffffff;
     width: 100%;
     transition: .5s ease;
     opacity: 1;
-    color: white;
     padding: 16px;
     text-align: center;
 }
@@ -876,12 +868,10 @@ html {
     width: 100%;
     padding: 8px;
     padding-right: 0;
-    height: 100%;
 }
 
 .third-topics-list {
     width: 100%;
-    height: 100%;
 }
 
 .third-topics-detail a,
@@ -933,26 +923,22 @@ html {
 
 .fourth-subcontainer {
     padding: 16px 0;
-    height: 100%;
     width: 100%;
 }
 
 .fourth-subcontainer-ads {
     width: 100%;
-    height: 100%;
     margin-bottom: 16px;
 }
 
 .fourth-subcontainer-left {
     float: right;
     width: 100%;
-    height: 100%;
 }
 
 .fourth-subcontainer-right {
     float: right;
     width: 100%;
-    height: 100%;
 }
 
 .fourth-right-list a,
@@ -1050,108 +1036,163 @@ html {
 
 /* fifth-section */
 
-.srm-list-items {
-    padding: 10px;
-    padding-bottom: 0;
-}
-
-.srm-list-items img {
-    vertical-align: middle;
-    float: right;
-    width: 30%;
-    border-radius: 50%;
-}
-
-.srm-list-items a {
-    text-decoration: none;
-    float: right;
-    width: 70%;
-}
-
-.sr-container-header i {
-    margin-left: 3px;
-}
-
-.container-custom-header {
-    padding: 8px;
-    padding-bottom: 0;
-}
-
-.sr-container-footer {
-    float: left;
-    text-align: center;
-}
-
-.srf-container-header {
-    width: 60%;
-}
-
-
-/* left */
-
-.second-left {
-    width: 100%;
-    height: 100%;
-}
-
-.sl-container-header {
-    width: 30%;
-}
-
-
-/* middle */
-
-.second-middle {
-    width: 100%;
-    padding-bottom: 10px;
-    height: 100%;
-}
-
-.sm-container-footer {
-    width: 10%;
-}
-
 ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    height: 100%;
-}
-
-.fourth-right-list li {
-    float: right;
-    width: 33.33%;
-    height: 100%;
 }
 
 .body-fifth-container {
-    background-color: slategrey;
-    padding: 10px 0;
+    background-image: url("../images/images.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 16px 0;
+}
+
+.fifth-subcontainer-left {
+    width: 100%;
+}
+
+.fifth-subcontainer-right {
+    width: 100%;
+}
+
+.fifth-subcontainer-bottom-right {
+    position: relative;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.fifth-subcontainer-bottom-left {
+    width: 100%;
+}
+
+.fifth-subcontainer-bottom-right a,
+.fifth-subcontainer-bottom-right img {
+    display: block;
+}
+
+.fifth-subcontainer-bottom-right img {
+    width: 100%;
+}
+
+.fifth-subcontainer-bottom a,
+.fifth-subcontainer-bottom img {
+    display: block;
+}
+
+.fifth-subcontainer-header {
+    background-color: #5b5b5b;
+    padding: 4px 8px;
+}
+
+.fifth-subcontainer-header h3 {
+    margin: 0;
+}
+
+.fifth-container-bottom {
+    border: 2px solid #5b5b5b;
+    border-top: 0;
+    padding: 8px;
+}
+
+.fifth-subcontainer-bottom img {
+    width: 100%;
 }
 
 .fifth-subcontainer {
-    height: 100%;
     width: 100%;
 }
 
 .fifth-subcontainer-left {
     width: 100%;
-    height: 50%;
 }
 
 .fifth-subcontainer-right {
     width: 100%;
-    height: 50%;
     padding-bottom: 10px;
 }
+
+.fifth-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #cd9a41;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 1;
+    padding: 0 8px;
+    text-align: right;
+}
+
+.fifth-overlay h4 {
+    margin: 16px 0;
+}
+
+.fifth-overlay a {
+    color: #ffffff;
+}
+
+.fifth-right-top,
+.fifth-right-middle {
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.fifth-right-bottom {
+    position: relative;
+}
+
+.fifth-middle-overlay {
+    position: absolute;
+    bottom: 0;
+    background: #84787a;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    height: 100%;
+    text-align: right;
+}
+
+.fifth-middle-overlay a {
+    color: #cd9a41;
+}
+
+.fifth-middle-overlay {
+    position: relative;
+    /* padding-bottom: 8px; */
+}
+
+.fifth-subcontainer-bottom {
+    position: relative;
+}
+
+.fifth-middle-overlay h4 {
+    position: absolute;
+    margin: 8px;
+    bottom: 0;
+}
+
+.fifth-right-bottom:hover img,
+.fifth-right-middle:hover img,
+.fifth-right-top:hover img {
+    opacity: 0.5;
+}
+
+.fifth-right-bottom:hover .fifth-middle-overlay,
+.fifth-right-middle:hover .fifth-middle-overlay,
+.fifth-right-top:hover .fifth-middle-overlay {
+    opacity: 1;
+}
+
+
+/* footer-section */
 
 .body-footer-container {
     background-color: #232323;
     color: #ffffff;
 }
-
-
-/* footer-section */
 
 .footer-top-box {
     padding: 16px 0;
@@ -1174,18 +1215,15 @@ ul {
 
 .footer-elements {
     padding-top: 16px;
-    height: 100%;
     width: 100%;
 }
 
 .footer-right-elements {
     width: 100%;
-    height: 100%;
 }
 
 .footer-left-elements {
     width: 100%;
-    height: 100%;
 }
 
 .footer-right-list {
@@ -1302,6 +1340,18 @@ ul {
 /* for desktop */
 
 @media only screen and (min-width: 800px) {
+    .first-min-height {
+        min-height: 460px;
+    }
+    .first-middle-min-height {
+        min-height: 200px;
+    }
+    .fifth-container-bottom {
+        min-height: 375px;
+    }
+    /* .fifth-subcontainer-bottom-right img {
+        min-height: 355px;
+    } */
     .header-search {
         float: left;
         width: 6%;
@@ -1323,7 +1373,6 @@ ul {
     .header-left-container {
         float: right;
         width: 85%;
-        height: 100%;
     }
     .header-date-menu {
         width: 100%;
@@ -1332,13 +1381,11 @@ ul {
     .header-title {
         float: right;
         width: 50%;
-        height: 100%;
         text-align: right;
     }
     .header-date-search {
         float: right;
         width: 50%;
-        height: 100%;
         padding-top: 10px;
     }
     .header-search i {
@@ -1384,7 +1431,6 @@ ul {
         padding-left: 8px;
         float: right;
         width: 50%;
-        height: 100%;
     }
     .first-bottom-section {
         padding-top: 8px;
@@ -1417,13 +1463,11 @@ ul {
         float: right;
         width: 20%;
         padding: 0 8px;
-        height: 100%;
     }
     .first-bottom-middle {
         float: right;
         width: 15%;
         padding: 0 8px;
-        height: 100%;
     }
     .first-ads-container {
         padding-right: 8px;
@@ -1432,7 +1476,6 @@ ul {
     }
     .first-bottom-right {
         width: 50%;
-        height: 100%;
     }
     .middle-top {
         width: 100%;
@@ -1461,20 +1504,17 @@ ul {
         width: 30%;
         padding-bottom: 0;
         padding-right: 8px;
-        height: 100%;
     }
     .second-middle {
         float: right;
         width: 50%;
         padding-bottom: 0;
         padding: 0 8px;
-        height: 100%;
     }
     .second-right {
         padding-left: 8px;
         float: right;
         width: 20%;
-        height: 100%;
     }
     .container-right {
         float: right;
@@ -1508,24 +1548,20 @@ ul {
         width: 25%;
         padding: 8px;
         padding-right: 0;
-        height: 100%;
     }
     /* fourth-section */
     .fourth-subcontainer-ads {
         float: right;
         width: 20%;
-        height: 100%;
     }
     .fourth-subcontainer-left {
         float: right;
         width: 30%;
-        height: 100%;
         padding-right: 16px;
     }
     .fourth-subcontainer-right {
         float: right;
         width: 50%;
-        height: 100%;
         padding-right: 16px;
     }
     .fourth-right-list a,
@@ -1574,34 +1610,49 @@ ul {
         width: 70%;
     }
     /* fourth-section */
+    /* fifth-section */
     .fifth-subcontainer-left {
         float: left;
-        width: 35%;
-        height: 100%;
-        padding-right: 10px;
+        width: 40%;
+        padding-right: 8px;
     }
     .fifth-subcontainer-right {
         float: right;
-        width: 65%;
-        height: 100%;
+        width: 60%;
         padding-bottom: 0;
+        padding-left: 8px;
     }
+    .fifth-subcontainer-bottom-right {
+        position: relative;
+        width: 75%;
+        float: right;
+        padding-left: 8px;
+    }
+    .fifth-subcontainer-bottom-left {
+        width: 25%;
+        float: right;
+    }
+    .fifth-right-top {
+        position: relative;
+        padding-bottom: 8px;
+    }
+    .fifth-right-middle {
+        padding-bottom: 8px;
+    }
+    /* fifth-section */
     /* footer-section */
     .footer-right-elements {
         float: right;
         width: 60%;
-        height: 100%;
         padding-bottom: 0;
     }
     .footer-left-elements {
         float: right;
         width: 40%;
         padding-right: 16px;
-        height: 100%;
     }
     .footer-elements {
         padding-top: 16px;
-        height: 100%;
         width: 70%;
     }
     /* footer-section */
