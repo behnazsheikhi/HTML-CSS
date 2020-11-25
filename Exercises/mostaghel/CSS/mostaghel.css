@@ -1188,6 +1188,11 @@ ul {
     height: 100%;
 }
 
+.footer-right-list {
+    float: right;
+    width: 83%;
+}
+
 .footer-right-list-items {
     float: right;
     margin: 0 8px;
@@ -1200,12 +1205,12 @@ ul {
     color: #ffffff;
 }
 
-.footer-right-list-items:first-child {
-    margin: 0;
-    background-color: none;
-    font-size: 15px;
+.popular-topic-link {
+    width: 17%;
+    float: right;
     padding: 4px 0;
-    background-color: #232323;
+    color: #ffffff;
+    font-family: 'IRANSansWeb-Bold';
 }
 
 .footer-right-list-items:last-child {
@@ -1278,6 +1283,16 @@ ul {
 
 #facebook {
     color: #5883e6;
+}
+
+.footer-bottom {
+    width: 100%;
+    padding: 16px 0;
+}
+
+.footer-bottom a {
+    color: #ffffff;
+    font-size: 12px;
 }
 
 
