@@ -472,7 +472,20 @@ html {
 .bottom-list {
     padding: 8px 0;
     font-size: 14px;
+    font-family: 'IRANSansWeb';
+}
+
+.second-bottom-list {
     font-family: 'IRANSansWeb-Bold';
+}
+
+.container-left {
+    font-size: 14px;
+    color: #343434;
+}
+
+.container-right p {
+    color: #343434;
 }
 
 .bottom-list a {
@@ -899,6 +912,13 @@ html {
 
 .third-topics-detail:hover img {
     opacity: 0.5;
+}
+
+.third-text-container,
+.fourth-right-text-container a,
+.fourth-left-text-container {
+    font-size: 14px;
+    font-family: 'IRANSansWeb-Bold';
 }
 
 
