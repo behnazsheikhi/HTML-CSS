@@ -361,6 +361,10 @@ html {
     margin-left: 3px;
 }
 
+.sr-container-footer {
+    float: left;
+}
+
 .first-list-items i {
     padding: 8px;
     background-color: #ed1b24;
