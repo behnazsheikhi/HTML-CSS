@@ -1346,12 +1346,12 @@ ul {
     .first-middle-min-height {
         min-height: 200px;
     }
-    .fifth-container-bottom {
-        min-height: 375px;
+    .fifth-subcontainer-bottom-right img {
+        min-height: 357px;
     }
-    /* .fifth-subcontainer-bottom-right img {
-        min-height: 355px;
-    } */
+    .left img {
+        min-height: 357px;
+    }
     .header-search {
         float: left;
         width: 6%;
@@ -1627,6 +1627,7 @@ ul {
         width: 75%;
         float: right;
         padding-left: 8px;
+        margin-bottom: 0;
     }
     .fifth-subcontainer-bottom-left {
         width: 25%;
