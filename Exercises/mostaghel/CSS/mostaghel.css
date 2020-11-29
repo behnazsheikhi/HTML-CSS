@@ -45,7 +45,6 @@ header a {
 body,
 html {
     font-family: 'IRANSansWeb';
-    font-size: 15px;
     direction: rtl;
 }
 
@@ -322,7 +321,7 @@ html {
 }
 
 
-/* top container موضوعات داغ */
+/* top container  */
 
 .first-popular-topics {
     font-size: 13px;
@@ -487,8 +486,10 @@ html {
 }
 
 .container-left {
+    margin-top: 8px;
     font-size: 14px;
     color: #343434;
+    width: 100%;
 }
 
 .container-right p {
@@ -676,8 +677,8 @@ html {
 .three-list-items i {
     display: block;
     position: absolute;
-    bottom: 10%;
-    left: 40%;
+    bottom: 25%;
+    left: 35%;
     color: #ffffff;
     font-size: 30px;
 }
@@ -747,18 +748,7 @@ html {
 
 .container-right p {
     margin: 8px 0;
-    font-size: 17px;
-}
-
-.container-right h3 {
-    width: 80%;
-    text-align: justify;
-}
-
-.container-left {
-    padding-right: 8px;
-    /* float: right; */
-    width: 100%;
+    font-size: 16px;
 }
 
 .container-right:hover a {
@@ -831,6 +821,7 @@ html {
 
 .second-left-img-container {
     position: relative;
+    padding-top: 8px;
 }
 
 .overlay {
@@ -1131,8 +1122,7 @@ ul {
     bottom: 0;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
-    color: #cd9a41;
-    width: 100%;
+    width: 98%;
     transition: .5s ease;
     opacity: 1;
     padding: 0 8px;
@@ -1141,6 +1131,10 @@ ul {
 
 .fifth-overlay h4 {
     margin: 16px 0;
+}
+
+.fifth-overlay time {
+    color: #cd9a41;
 }
 
 .fifth-overlay a {
@@ -1174,7 +1168,6 @@ ul {
 
 .fifth-middle-overlay {
     position: relative;
-    /* padding-bottom: 8px; */
 }
 
 .fifth-subcontainer-bottom {
@@ -1249,7 +1242,7 @@ ul {
     margin: 0 8px;
     background-color: #952328;
     padding: 4px 8px;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .footer-right-list-items a {
@@ -1262,6 +1255,7 @@ ul {
     padding: 4px 0;
     color: #ffffff;
     font-family: 'IRANSansWeb-Bold';
+    font-size: 14px;
 }
 
 .footer-right-list-items:last-child {
@@ -1303,7 +1297,7 @@ ul {
     height: 100%;
 }
 
-.social-media h3 {
+.social-media h4 {
     margin: 16px 0;
 }
 
@@ -1341,9 +1335,23 @@ ul {
     padding: 16px 0;
 }
 
-.footer-bottom a {
+.footer-aasaam-des {
     color: #ffffff;
     font-size: 12px;
+}
+
+.footer-bottom img {
+    display: block;
+}
+
+.footer-aasaam-logo {
+    float: right;
+}
+
+.footer-aasaam-des {
+    padding-top: 16px;
+    padding-right: 8px;
+    float: right;
 }
 
 
@@ -1359,16 +1367,33 @@ ul {
     .first-middle-min-height {
         min-height: 200px;
     }
-    .fifth-subcontainer-bottom-right img {
-        min-height: 357px;
+    .left {
+        position: relative;
+        min-height: 356px;
     }
-    .left img {
-        min-height: 357px;
+    .fifth-subcontainer-bottom-right {
+        min-height: 356px;
+        position: absolute;
     }
+    .subcontainer-link img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .subcontainer-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        padding-left: 8px;
+    }
+    /* .fifth-overlay {
+        padding-left: 8px;
+    } */
     .header-search {
         float: left;
         width: 6%;
-        text-align: right;
+        text-align: center;
     }
     .header-elements {
         margin: 0;
@@ -1389,7 +1414,6 @@ ul {
     }
     .header-date-menu {
         width: 100%;
-        /* margin-top: 16px; */
     }
     .header-title {
         float: right;
@@ -1427,7 +1451,7 @@ ul {
         display: none;
     }
     /* first section */
-    /* top container موضوعات داغ */
+    /* top container  */
     .first-popular-topics {
         font-size: 16px;
         margin: 0 auto;
@@ -1439,7 +1463,7 @@ ul {
         float: right;
         margin-bottom: 0;
     }
-    /* top container موضوعات داغ */
+    /* top container */
     .right-section {
         padding-left: 8px;
         float: right;
@@ -1534,12 +1558,10 @@ ul {
         width: 50%;
     }
     .container-left {
+        padding-top: 0;
         padding-right: 8px;
         float: right;
         width: 50%;
-    }
-    .second-left-img-container {
-        padding-top: 8px;
     }
     .three-list-items {
         float: right;
