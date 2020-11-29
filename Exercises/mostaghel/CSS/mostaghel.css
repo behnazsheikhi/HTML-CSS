@@ -1122,7 +1122,7 @@ ul {
     bottom: 0;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
-    width: 98%;
+    width: 100%;
     transition: .5s ease;
     opacity: 1;
     padding: 0 8px;
@@ -1370,6 +1370,9 @@ ul {
     .left {
         position: relative;
         min-height: 356px;
+    }
+    .fifth-overlay {
+        width: 98%;
     }
     .fifth-subcontainer-bottom-right {
         min-height: 356px;
