@@ -31,21 +31,22 @@ html {
     font-family: 'IRANSansWeb';
     direction: rtl;
     font-size: 18px;
+    margin: 0;
 }
 
-.outer-wrapper {
-    width: 1300px;
-    margin: 0 auto;
-}
+
+/* .inner-wrapper {
+
+} */
 
 .inner-wrapper {
-    width: 1200px;
+    max-width: 1200px;
     padding: 0 8px;
     margin: 0 auto;
     display: block;
 }
 
-.blog-main-clear {
+.blog-main-clear::after {
     clear: both;
     display: table;
     content: "";
@@ -53,10 +54,6 @@ html {
 
 
 /* header */
-
-.header-elements {
-    width: 100%;
-}
 
 .header-date-social-container {
     background-color: #d9d9d9;
@@ -155,12 +152,16 @@ html {
 
 .navidation-lists {
     float: right;
-    width: 90%;
+    width: 85%;
 }
 
 .search-icon {
     float: left;
-    width: 10%;
+    width: 15%;
+}
+
+footer {
+    width: 100%;
 }
 
 
@@ -216,6 +217,17 @@ html {
     padding-bottom: 8px;
 }
 
+.inner-box-image {
+    margin-bottom: 8px;
+    background-color: #f2f2f2;
+    border: 1px solid#d9d9d9;
+}
+
+.inner-box-list {
+    background-color: #f2f2f2;
+    border: 1px solid#d9d9d9;
+}
+
 
 /* right-top-left */
 
@@ -261,6 +273,7 @@ html {
 /* footer-top-section -- it includes three sections*/
 
 .footer-facilities {
+    width: 100%;
     background-color: #001a33;
     padding: 16px 0;
 }
@@ -340,14 +353,16 @@ html {
 @media only screen and (min-width: 800px) {
     .header-date-time {
         float: right;
-        width: 30%;
+        width: 50%;
         text-align: right;
         padding-bottom: 0;
+        padding-left: 8px;
     }
     .header-social-media {
         float: left;
-        width: 30%;
+        width: 50%;
         text-align: left;
+        padding-right: 8px;
     }
     .header-popular-topics {
         float: right;
@@ -378,12 +393,14 @@ html {
     }
     .titles-selected-topic {
         float: right;
-        width: 30%;
+        width: 50%;
         padding-bottom: 0;
+        padding-left: 8px;
     }
     .weather-condition {
         float: left;
-        width: 30%;
+        width: 50%;
+        padding-right: 8px;
     }
     /* main */
     .important-news {
@@ -415,7 +432,7 @@ html {
         min-height: 105px;
     }
     .footer-services-contact-elements {
-        width: 85%;
+        width: 100%;
     }
     .services {
         float: right;
@@ -448,6 +465,6 @@ html {
     }
     .footer-borna-aasaam {
         padding: 16px 0;
-        width: 85%;
+        width: 100%;
     }
 }
