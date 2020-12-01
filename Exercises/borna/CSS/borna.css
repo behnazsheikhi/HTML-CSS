@@ -193,25 +193,25 @@ html {
 
 /*  right section in main  */
 
-.main-right-container {
+.important-news {
     width: 100%;
 }
 
 
 /* right-top */
 
-.right-top-container {
+.reportes-container {
     padding-bottom: 8px;
 }
 
-.right-top-container-inner-box {
+.reportes-container-inner-box {
     width: 100%;
 }
 
 
 /* right-top-right */
 
-.inner-box-right {
+.selected-reports {
     width: 100%;
     padding-bottom: 8px;
 }
@@ -219,7 +219,7 @@ html {
 
 /* right-top-left */
 
-.inner-box-left {
+.most-popular-reports {
     width: 100%;
     padding-top: 8px;
 }
@@ -227,11 +227,11 @@ html {
 
 /* right-bottom */
 
-.right-bottom-container {
+.diverse-reports {
     padding-top: 8px;
 }
 
-.right-bottom-container-inner-box {
+.diverse-reports-inner-box {
     background-color: #f2f2f2;
     border: 1px solid#d9d9d9;
 }
@@ -239,12 +239,12 @@ html {
 
 /*  left section in main  */
 
-.main-left-container {
+.additional-reports {
     margin-top: 16px;
     width: 100%;
 }
 
-.left-container-inner-box {
+.additional-reports-inner-box {
     background-color: #f2f2f2;
     border: 1px solid#d9d9d9;
 }
@@ -260,19 +260,19 @@ html {
 
 /* footer-top-section -- it includes three sections*/
 
-.footer-container-top {
+.footer-facilities {
     background-color: #001a33;
     padding: 16px 0;
 }
 
-.footer-top-elements {
+.footer-services-contact-elements {
     width: 100%;
 }
 
 
 /* first section */
 
-.top-element-right {
+.services {
     width: 100%;
     padding-bottom: 8px;
 }
@@ -280,7 +280,7 @@ html {
 
 /* second section */
 
-.top-element-middle {
+.contact-us {
     width: 100%;
     padding: 8px 0;
 }
@@ -288,7 +288,7 @@ html {
 
 /* third section */
 
-.top-element-left {
+.contact-authorities {
     width: 100%;
     padding-top: 8px;
 }
@@ -299,11 +299,11 @@ html {
 
 /* footer-bootom-section it includes two sections*/
 
-.footer-container-bootom {
+.footer-info-elements {
     background-color: #000000;
 }
 
-.footer-bottom-elements {
+.footer-borna-aasaam {
     padding: 16px 0;
     width: 100%;
 }
@@ -311,7 +311,7 @@ html {
 
 /* first section  */
 
-.bottom-element-right {
+.borna-news {
     width: 100%;
     padding-bottom: 8px;
 }
@@ -319,7 +319,7 @@ html {
 
 /* second-section */
 
-.bottom-element-left {
+.aasaam-web-design {
     width: 100%;
     padding-top: 8px;
 }
@@ -386,67 +386,67 @@ html {
         width: 30%;
     }
     /* main */
-    .main-right-container {
+    .important-news {
         float: right;
         width: 70%;
         padding-left: 8px;
     }
-    .main-left-container {
+    .additional-reports {
         float: right;
         width: 30%;
         padding-right: 8px;
     }
-    .inner-box-right {
+    .selected-reports {
         padding-bottom: 0;
         float: right;
         width: 70%;
         padding-left: 8px;
     }
-    .inner-box-left {
+    .most-popular-reports {
         padding-top: 0;
         float: right;
         width: 30%;
         padding-right: 8px;
     }
-    .main-left-container {
+    .additional-reports {
         margin-top: 0;
     }
-    .left-container-inner-box {
+    .additional-reports-inner-box {
         min-height: 105px;
     }
-    .footer-top-elements {
+    .footer-services-contact-elements {
         width: 85%;
     }
-    .top-element-right {
+    .services {
         float: right;
         width: 30%;
         padding-left: 8px;
         padding-bottom: 0;
     }
-    .top-element-middle {
+    .contact-us {
         float: right;
         width: 45%;
         padding: 0 8px;
     }
-    .top-element-left {
+    .contact-authorities {
         float: right;
         width: 25%;
         padding-right: 8px;
         padding-top: 0;
     }
-    .bottom-element-right {
+    .borna-news {
         float: right;
         width: 70%;
         padding-left: 8px;
         padding-bottom: 0;
     }
-    .bottom-element-left {
+    .aasaam-web-design {
         float: left;
         width: 30%;
         padding-right: 8px;
         padding-top: 0;
     }
-    .footer-bottom-elements {
+    .footer-borna-aasaam {
         padding: 16px 0;
         width: 85%;
     }
