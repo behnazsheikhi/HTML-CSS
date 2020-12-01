@@ -727,7 +727,7 @@ html {
 /* one */
 
 .container-right {
-    float: right;
+    /* float: right; */
     width: 100%;
 }
 
