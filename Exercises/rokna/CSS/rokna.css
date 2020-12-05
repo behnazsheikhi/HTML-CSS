@@ -1,0 +1,589 @@
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url('../font/IRANSansWeb.eot') format('"embedded-opentype"'), url('../font/IRANSansWeb.woff') format('woff'), url('../font/IRANSansWeb.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANSansWeb-Bold';
+    src: url('../font/IRANSansWeb-Bold.eot') format('"embedded-opentype"'), url('../font/IRANSansWeb-Bold.woff') format('woff'), url('../font/IRANSansWeb-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'IRANSansWeb';
+    max-width: 100%;
+    direction: rtl;
+    font-size: 15px;
+    margin: 0;
+}
+
+.outer-date-container,
+.footer-poplur-topics {
+    background-color: #000000;
+}
+
+.outer-nav-container,
+.blog-videos-container,
+.blog-unwatched-news,
+.footer-search-meadia-container,
+.footer-bootom-container {
+    background-color: #333333;
+}
+
+.blog-documents-container {
+    background-color: #d9d9d9;
+    padding: 16px 0;
+}
+
+.blog-inner-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+.blog-mian-clear {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.blog-main-bcolor-border {
+    background-color: #f2f2f2;
+    border: 1px solid #bfbfbf;
+    text-align: center;
+    padding: 8px 0;
+}
+
+
+/* header */
+
+.header-container {
+    width: 100%;
+    color: #ffffff;
+    direction: ltr;
+}
+
+.date-search-container {
+    float: left;
+    width: 90%;
+}
+
+.language-container {
+    float: left;
+    width: 10%;
+    padding: 4px;
+    padding-right: 0;
+}
+
+.search-logo {
+    float: left;
+    width: 10%;
+    padding: 4px 0;
+    padding-right: 4px;
+}
+
+.language-logo {
+    width: 100%;
+}
+
+.time-container {
+    float: left;
+    width: 90%;
+    padding: 4px;
+}
+
+.header-inner-text-red {
+    background-color: #ff0000;
+    padding: 4px;
+    text-align: center;
+}
+
+.logo-inner-text-red {
+    text-align: center;
+}
+
+.header-inner-text-gray {
+    background-color: #b3b3b3;
+    color: #000000;
+    padding: 4px;
+    text-align: center;
+}
+
+.header-navigation-container {
+    width: 100%;
+}
+
+.main-navigation {
+    width: 100%;
+    padding: 4px 0;
+}
+
+.logo-navigation {
+    width: 100%;
+    padding: 4px 0;
+}
+
+
+/* header */
+
+
+/* main */
+
+
+/* first-part */
+
+.main-elements {
+    max-width: 100%;
+}
+
+.main-section-container,
+.blog-special-topics-container,
+.blog-plus-market-detail {
+    background-color: #ffffe6;
+    padding: 16px 0;
+}
+
+.horizontal-ads {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+
+.suggestion-news,
+.labels,
+.others-read,
+.top-news,
+.faq,
+.advertisement,
+.social-news-container,
+.middle-container,
+.join {
+    padding-bottom: 8px;
+}
+
+.suggestion-faq-container,
+.advertisement,
+.left-priority-container,
+.right-priority-container {
+    width: 100%;
+}
+
+
+/* second-part */
+
+.blog-videos-container,
+.footer-poplur-topics {
+    padding: 16px 0;
+}
+
+.footer-bootom-container {
+    padding-top: 16px;
+}
+
+.videos-section {
+    width: 100%;
+}
+
+.video-top-priority {
+    width: 100%;
+    padding-bottom: 8px;
+}
+
+.other-videos {
+    width: 100%;
+}
+
+
+/* third-part */
+
+.selected-suggestion-container,
+.specials-events-celebrities-container,
+.most-popular-container,
+.footer-contact-info {
+    width: 100%;
+}
+
+.specials-events-celebrities-container,
+.most-popular-container {
+    padding-bottom: 8px;
+    border-bottom: 1px solid gray;
+}
+
+.selected-case,
+.documents {
+    width: 100%;
+}
+
+.suggestions {
+    width: 100%;
+    padding-top: 8px;
+}
+
+.events-selected {
+    padding-bottom: 8px;
+}
+
+
+/* fourth-part */
+
+.celebrities-right {
+    padding-bottom: 8px;
+    width: 100%;
+}
+
+.doc-middle-right,
+.doc-middle-left {
+    padding-bottom: 8px;
+    width: 100%;
+}
+
+.celebrities-left {
+    width: 100%;
+}
+
+
+/* fifth-part unwathced */
+
+.blog-unwatched-news {
+    padding: 16px 0;
+}
+
+.improtant-news-container {
+    width: 100%;
+}
+
+.important-news-picture {
+    width: 100%;
+    padding-bottom: 8px;
+}
+
+.important-news-title {
+    width: 100%;
+}
+
+
+/* sixth-part */
+
+.plus-market-container {
+    width: 100%;
+}
+
+.rokna-plus-des,
+.market-diary-container,
+.rokna-plus-container {
+    width: 100%;
+}
+
+.rokna-plus-list,
+.rokna-plus-des {
+    width: 100%;
+    padding-bottom: 8px;
+}
+
+.markets,
+.rokna-plus-des-useful {
+    padding-bottom: 8px;
+}
+
+
+/* footer */
+
+
+/* search-meadia-container */
+
+.footer-search-meadia-container {
+    padding: 16px 0;
+}
+
+.search-media-inner-section {
+    width: 100%;
+}
+
+.search {
+    width: 100%;
+    padding-bottom: 8px;
+}
+
+.media,
+.specials,
+.events,
+.celebrities,
+.videos,
+.news,
+.join-section {
+    width: 100%;
+}
+
+.specials,
+.videos,
+.events,
+.news,
+.conatct-lables,
+.rokna-info,
+.aasaam-info {
+    padding-bottom: 8px;
+}
+
+.most-popular-container,
+.footer-contact-info {
+    padding: 8px 0;
+}
+
+.conatct-lables,
+.blog-information,
+.rokna-info,
+.aasaam-info {
+    width: 100%;
+}
+
+.header-image {
+    display: none;
+}
+
+.header-image-mobile {
+    display: block;
+    margin-bottom: 4px;
+    background-color: #ff0000;
+    padding: 16px;
+}
+
+@media only screen and (min-width:800px) {
+    /* header */
+    .header-image-mobile {
+        display: none;
+    }
+    .logo-inner-text-red {
+        text-align: center;
+        padding-top: 40px;
+    }
+    .header-image {
+        display: block;
+        position: absolute;
+        min-height: 110px;
+        width: 12%;
+        background-color: #ff0000;
+        top: 0;
+    }
+    .main-navigation {
+        float: right;
+        width: 95%;
+        padding: 8px 0;
+        padding-left: 8px;
+    }
+    .logo-navigation {
+        float: right;
+        width: 5%;
+        padding: 8px 0;
+    }
+    .date-search-container {
+        float: left;
+        width: 40%;
+    }
+    .language-container {
+        float: left;
+        width: 60%;
+        padding: 4px;
+    }
+    .search-logo {
+        float: left;
+        width: 10%;
+        padding: 4px 0;
+        padding-right: 4px;
+    }
+    .language-logo {
+        width: 5%;
+    }
+    .time-container {
+        float: left;
+        width: 90%;
+        padding: 4px;
+    }
+    /* header */
+    /* main */
+    /* first-part */
+    .horizontal-ads {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .most-priority-container {
+        width: 100%;
+        display: flex;
+    }
+    .right-priority-container {
+        width: 70%;
+        float: right;
+        padding-top: 16px;
+        padding-left: 8px;
+    }
+    .left-priority-container {
+        width: 30%;
+        float: right;
+        padding-top: 16px;
+        padding-right: 8px;
+    }
+    .suggestion-news,
+    .labels,
+    .others-read,
+    .top-news {
+        padding-bottom: 8px;
+    }
+    .suggestion-faq-container {
+        float: right;
+        width: 60%;
+        padding-left: 8px;
+    }
+    .advertisement {
+        float: right;
+        width: 40%;
+        padding-right: 8px;
+    }
+    .social-news-container {
+        padding-bottom: 8px;
+    }
+    /* second-part */
+    .video-top-priority {
+        float: right;
+        width: 50%;
+        padding-left: 8px;
+        padding-bottom: 0;
+    }
+    .other-videos {
+        float: right;
+        width: 50%;
+        padding-right: 8px;
+    }
+    /* second-part */
+    /* third-part */
+    .selected-case {
+        float: right;
+        width: 75%;
+        padding-left: 8px;
+    }
+    .suggestions {
+        float: right;
+        width: 25%;
+        padding-right: 8px;
+        padding-top: 0;
+    }
+    .custom-height {
+        min-height: 96px;
+    }
+    .videos-custom-height {
+        min-height: 150px;
+    }
+    /* third-part */
+    /* fourth-part  documents*/
+    .celebrities-right {
+        float: right;
+        padding-left: 8px;
+        padding-bottom: 0;
+        width: 25%;
+    }
+    .doc-middle-right,
+    .doc-middle-left {
+        float: right;
+        padding: 0 8px;
+        width: 25%;
+    }
+    .celebrities-left {
+        float: right;
+        padding-right: 8px;
+        width: 25%;
+    }
+    /* fifth-part unwatched-news*/
+    .important-news-picture {
+        float: right;
+        width: 50%;
+        padding-left: 8px;
+        padding-bottom: 0;
+    }
+    .important-news-title {
+        float: right;
+        width: 50%;
+        padding-right: 8px;
+    }
+    /* sixth-part */
+    .rokna-plus-container {
+        float: right;
+        width: 70%;
+        padding-left: 8px;
+    }
+    .market-diary-container {
+        float: right;
+        width: 30%;
+        padding-right: 8px;
+    }
+    .rokna-plus-des {
+        float: right;
+        width: 40%;
+        padding-left: 8px;
+    }
+    .rokna-plus-list {
+        float: right;
+        width: 60%;
+        padding-right: 8px;
+    }
+    .search {
+        float: right;
+        width: 30%;
+        padding-left: 8px;
+        padding-bottom: 0;
+    }
+    .media {
+        float: right;
+        width: 70%;
+        padding-right: 8px;
+    }
+    .specials,
+    .videos {
+        float: right;
+        width: 25%;
+        padding-left: 8px;
+    }
+    .events,
+    .news {
+        float: right;
+        width: 25%;
+        padding: 0 8px;
+    }
+    .celebrities,
+    .join-section {
+        float: right;
+        width: 50%;
+        padding-right: 8px;
+    }
+    .most-popular-container,
+    .footer-contact-info {
+        padding: 16px 0 8px;
+    }
+    .conatct-lables {
+        float: right;
+        width: 50%;
+        padding-left: 8px;
+    }
+    .blog-information {
+        float: right;
+        width: 50%;
+        padding-right: 8px;
+    }
+    .rokna-info {
+        float: right;
+        width: 60%;
+        padding-left: 8px;
+    }
+    .aasaam-info {
+        float: right;
+        width: 40%;
+        padding-right: 8px;
+    }
+}
