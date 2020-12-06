@@ -29,9 +29,11 @@
 body,
 html {
     font-family: 'IRANSansWeb';
+    max-width: 100%;
     direction: rtl;
-    font-size: 18px;
+    font-size: 15px;
     margin: 0;
+    overflow-x: hidden;
 }
 
 
@@ -41,9 +43,8 @@ html {
 
 .inner-wrapper {
     max-width: 1200px;
-    padding: 0 8px;
     margin: 0 auto;
-    display: block;
+    padding: 0 8px;
 }
 
 .blog-main-clear::after {
@@ -186,7 +187,7 @@ footer {
 */
 
 .blog-main-container {
-    width: 100%;
+    min-width: 100%;
     margin: 16px 0;
     background-color: #ffffff;
 }
