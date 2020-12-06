@@ -68,14 +68,13 @@ html {
 /* header */
 
 .header-container {
-    width: 100%;
+    max-width: 100%;
     color: #ffffff;
-    direction: ltr;
 }
 
 .date-search-container {
     float: left;
-    width: 90%;
+    width: 100%;
 }
 
 .language-container {
@@ -98,7 +97,7 @@ html {
 
 .time-container {
     float: left;
-    width: 90%;
+    width: 80%;
     padding: 4px;
 }
 
@@ -352,7 +351,6 @@ html {
 
 .header-image-mobile {
     display: block;
-    margin-bottom: 4px;
     background-color: #ff0000;
     padding: 16px;
 }
@@ -387,25 +385,26 @@ html {
     }
     .date-search-container {
         float: left;
-        width: 40%;
+        width: 100%;
     }
     .language-container {
         float: left;
-        width: 60%;
+        width: 55%;
         padding: 4px;
     }
     .search-logo {
         float: left;
-        width: 10%;
+        width: 5%;
         padding: 4px 0;
         padding-right: 4px;
     }
     .language-logo {
-        width: 5%;
+        float: left;
+        width: 10%;
     }
     .time-container {
         float: left;
-        width: 90%;
+        width: 40%;
         padding: 4px;
     }
     /* header */
