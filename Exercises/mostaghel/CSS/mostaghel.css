@@ -93,6 +93,10 @@ html {
     margin-bottom: 16px;
 }
 
+.blog-bColor-news {
+    background-color: #fefefe;
+}
+
 .blog-bColor-white {
     background-color: #ffffff;
 }
@@ -476,7 +480,7 @@ html {
 }
 
 .bottom-list {
-    padding: 8px 0;
+    padding: 8px 0 16px;
     font-size: 14px;
     font-family: 'IRANSansWeb';
 }
@@ -1250,7 +1254,7 @@ ul {
 }
 
 .popular-topic-link {
-    width: 17%;
+    min-width: 17%;
     float: right;
     padding: 4px 0;
     color: #ffffff;
