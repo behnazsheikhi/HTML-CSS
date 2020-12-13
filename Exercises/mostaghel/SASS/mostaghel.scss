@@ -644,12 +644,14 @@ html {
     a {
         @include fcolor($color-default-dred);
     }
-     :hover {
-        @include bcolor(#efefef);
-    }
-     :first-child {
-        @include bcolor( #efefef);
-    }
+}
+
+.top-list-items:hover {
+    @include bcolor($color-list-title);
+}
+
+.top-list-items:first-child {
+    @include bcolor( $color-list-title);
 }
 
 .two-second-container {
