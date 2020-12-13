@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url('../font/IRANSansWeb.eot') format('"embedded-opentype"'), url('../font/IRANSansWeb.woff') format('woff'), url('../font/IRANSansWeb.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANSansWeb-Bold';
+    src: url('../font/IRANSansWeb-Bold.eot') format('"embedded-opentype"'), url('../font/IRANSansWeb-Bold.woff') format('woff'), url('../font/IRANSansWeb-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url("../font-awesome-4.7.0/fonts/fontawesome-webfont.svg") format("svg"), url("../font-awesome-4.7.0/fonts/fontawesome-webfont.eot") format("embedded-opentype"), url("../font-awesome-4.7.0/fonts/fontawesome-webfont.ttf") format("truetype"), url("../font-awesome-4.7.0/fonts/fontawesome-webfont.woff") format("woff"), url("../font-awesome-4.7.0/fonts/fontawesome-webfont.woff2") format("woff2"),
+}
+
+// variables
+$font-deault:'IRANSansWeb';
+$font-bold: 'IRANSansWeb-Bold';
+$font-icon:"Font Awesome 5 Free";
+$color-default-white:#ffffff;
+$color-custom-light:#f0f0f0;
+$color-custom-news:#fefefe;
+$color-light-gray:#f3f3f3;
+$color-default-ochr:#cd9a41;
+$color-dochr:#da9e36;
+$color-orange: #ffac12;
+$color-default-dred:#952328;
+$color-mred: #b22328;
+$color-default-lred:#eb1c24;
+$color-default-black:#000000;
+$color-lblack: #1a1a1a;
+$color-header-bc:#1d1c1b;
+$color-date:#b0b0b0;
+$color-header-custom:#333333;
+$color-dgray:#343434;
+$color-custom-lgary:#5b5b5b;
+$color-insta:#dddddd;
+$color-link:#0177b5;
+$color-twit:#11c1ff;
+$color-face:#5883e6;
+// variables
