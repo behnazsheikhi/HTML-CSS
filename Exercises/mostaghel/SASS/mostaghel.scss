@@ -398,11 +398,18 @@ html {
     @include fcolor($color-mred);
 }
 
-#first-right-section:hover img {
-    opacity: 0.5;
+#first-right-section {
+    @include bcolor($color-default-white);
+    @extend .blog-first-section-border-gray;
+    @extend .section-default-padding;
+     :hover {
+        img {
+            opacity: 0.5;
+        }
+    }
 }
 
-#first-right-section:hover .custom-header {
+#first-right-section :hover .custom-header {
     @include fcolor($color-default-dred);
 }
 
@@ -577,17 +584,18 @@ html {
 }
 
 .second-right,
-.sr-list-topics,
-.sr-list-items {
+.sr-list-topics {
     width: 100%;
 }
 
 .sr-list-items {
+    width: 100%;
     padding: 8px 0;
-}
-
-.sr-list-items:hover {
-    opacity: 0.5;
+     :hover {
+        img {
+            opacity: 0.5;
+        }
+    }
 }
 
 .sr-list-items:hover .text-container {
@@ -792,9 +800,7 @@ html {
         width: 95%;
     }
      :hover {
-        a {
-            @include fcolor($color-default-dred);
-        }
+        @include fcolor($color-default-dred);
     }
 }
 
@@ -898,10 +904,11 @@ html {
         img {
             opacity: 0.5;
         }
-        .third-text-container {
-            @include fcolor($color-default-dred);
-        }
     }
+}
+
+.third-topics-detail:hover .third-text-container {
+    @include fcolor($color-default-dred);
 }
 
 .third-topics-list {
@@ -987,12 +994,13 @@ html {
             img {
                 opacity: 0.5;
             }
-            .fourth-right-text-container {
-                a {
-                    @include fcolor($color-default-dred);
-                }
-            }
         }
+    }
+}
+
+.fourth-right-list:hover .fourth-right-text-container {
+    a {
+        @include fcolor($color-default-dred);
     }
 }
 
@@ -1028,10 +1036,11 @@ html {
         img {
             opacity: 0.5;
         }
-        .fourth-left-text-container {
-            @include fcolor($color-default-dred);
-        }
     }
+}
+
+.fourth-left-items:hover .fourth-left-text-container {
+    @include fcolor($color-default-dred);
 }
 
 .fourth-left-img-container {
@@ -1515,11 +1524,16 @@ html {
         width: 100%;
         margin-bottom: 16px;
         padding-bottom: 20%;
-        img {
-            opacity: 0.5;
-        }
         a {
-            @include fcolor($color-default-black);
+            @include fcolor($color-default-dred);
+        }
+         :hover {
+            img {
+                opacity: 0.5;
+            }
+            a {
+                @include fcolor($color-default-black);
+            }
         }
     }
     .middle-bottom {
