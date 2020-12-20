@@ -1,7 +1,9 @@
 $(document).ready(function() {
 
+
+
     $("#lightslider").lightSlider({
-        item: 3,
+        item: 1,
         keypress: true,
     });
 

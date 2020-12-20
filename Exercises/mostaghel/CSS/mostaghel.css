@@ -375,7 +375,7 @@ html {
     color: #ffffff;
 }
 
-#custom-title {
+.custom-title {
     background-color: #da9e36;
     color: #000000;
 }
@@ -406,11 +406,11 @@ html {
     color: #b22328;
 }
 
-#first-right-section:hover img {
+.first-right-section:hover img {
     opacity: 0.5;
 }
 
-#first-right-section:hover .custom-header {
+.first-right-section:hover .custom-header {
     color: #952328;
 }
 
