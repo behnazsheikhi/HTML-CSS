@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 
 
-    $(".second-bottom-list", "").slimScroll({
+    $(".second-bottom-list").slimScroll({
         height: '700px',
         size: '5px',
         position: 'right',
