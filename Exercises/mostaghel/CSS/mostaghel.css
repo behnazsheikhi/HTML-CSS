@@ -380,6 +380,12 @@ html {
     color: #000000;
 }
 
+
+/* .active,
+.dot:hover {
+    color: blueviolet;
+} */
+
 .first-right-image {
     width: 100%;
 }
@@ -462,6 +468,7 @@ html {
 
 .right-section {
     width: 100%;
+    /* position: relative; */
 }
 
 .first-left {
