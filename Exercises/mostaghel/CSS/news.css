@@ -169,17 +169,6 @@ html {
     color: #0860a8;
 }
 
-.poverty-img-container {
-    padding: 24px 0;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.poverty-img-container img {
-    width: 100%;
-    height: 100%;
-}
-
 a,
 img {
     display: block;
@@ -193,6 +182,42 @@ img {
     font-size: 15px;
     line-height: 30px;
     text-align: justify;
+}
+
+.table-news-container,
+.poverty-img-container,
+.img-news-container {
+    padding: 24px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.poverty-img-container img,
+.img-news-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.table-news-container h3 {
+    margin: 8px 0
+}
+
+.table-news-container table {
+    font-size: 14px;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table-news-container td,
+.table-news-container th {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid gray;
+}
+
+.table-news-container tr:nth-child(even) {
+    background-color: #dddddd;
 }
 
 .poverty-social-media {
@@ -475,7 +500,9 @@ textarea {
         text-align: left;
         padding-left: 4px;
     }
-    .poverty-img-container {
+    .table-news-container,
+    .poverty-img-container,
+    .img-news-container {
         padding: 24px 0;
         width: 80%;
         margin: 0 auto;
