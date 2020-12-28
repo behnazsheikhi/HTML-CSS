@@ -1,0 +1,250 @@
+@import '../node_modules/susy/sass/susy';
+@import '../node_modules/breakpoint-sass/stylesheets/breakpoint';
+@import 'variable';
+$susy:( columns:10, math:fluid, flow:rtl, container:auto, container-position:center);
+* {
+    box-sizing: border-box;
+    // margin: 0;
+}
+
+body,
+html {
+    max-width: 100%;
+    font-family: $font-deault;
+    font-size: $main-font-size;
+}
+
+.header-container {
+    background-color: $color-black;
+    .header-elements {
+        @include container(1200px);
+        padding: 0 8px;
+        .header-menu {
+            @include breakpoint(max-width 800px) {
+                @include span(10);
+                padding-bottom: 10px;
+            }
+            @include span( 5);
+        }
+        .header-media {
+            @include breakpoint(max-width 800px) {
+                @include span(10);
+                padding-bottom: 10px;
+            }
+            @include span(last 5);
+        }
+    }
+}
+
+.main-container {
+    background-color: $color-default;
+}
+
+.menu-logo-container {
+    @include container(1200px);
+    padding: 8px;
+    .logo-container {
+        @include breakpoint(max-width 800px) {
+            @include span(10);
+            margin-bottom: 10px;
+        }
+        @include span( 3);
+    }
+    .menu-container {
+        @include breakpoint(max-width 800px) {
+            @include span(10);
+            margin-bottom: 10px;
+        }
+        @include span( 5 at 5);
+    }
+    .search-container {
+        @include breakpoint(max-width 800px) {
+            @include span(10);
+        }
+        @include span(last 2);
+    }
+}
+
+.first-container {
+    @include container(1100px);
+    padding: 8px;
+    .first-right-section {
+        @include breakpoint(max-width 800px) {
+            @include span(10);
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        @include span( 7);
+        margin:8px 0
+    }
+    .first-left-section {
+        @include breakpoint(max-width 800px) {
+            @include span(10);
+            margin: 0;
+        }
+        @include span( last 3);
+        margin:8px 0
+    }
+}
+
+.horizontal-container {
+    @include container(1100px);
+    padding: 0 8px;
+    .horizontal-items-section {
+        @include breakpoint(max-width 800px) {
+            @include span(10);
+            margin-bottom: 10px;
+        }
+        @include span(2.5);
+    }
+    .horizontal-items-section:last-child {
+        margin-bottom: 0;
+    }
+    .horizontal-items-big-section {
+        @include breakpoint(max-width 800px) {
+            @include span(10);
+            margin-bottom: 8px;
+        }
+        @include span(3.33);
+    }
+    .horizontal-items-big-section:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.diverse-container {
+    @include container(1100px);
+    padding: 8px;
+    .main-section {
+        @include breakpoint(max-width 800px) {
+            @include span(10);
+            margin-bottom: 10px;
+        }
+        @include span(5);
+        height: 200px;
+    }
+    .middle-section {
+        @include breakpoint(max-width 800px) {
+            @include span(10);
+            margin-bottom: 8px;
+        }
+        @include span(2);
+        .middle-top {
+            height: 100px;
+            margin-bottom: 8px;
+        }
+        .middle-bottom {
+            height: 100px;
+        }
+    }
+    .left-section {
+        @include breakpoint(max-width 800px) {
+            @include span(10);
+            padding-bottom: 10px;
+        }
+        @include span( last 3);
+        .left-top {
+            height: 150px;
+            margin-bottom: 8px;
+        }
+        .left-bottom {
+            height: 50px;
+        }
+    }
+    .left-list-section {
+        @include breakpoint(max-width 800px) {
+            @include span(10);
+            padding-bottom: 10px;
+        }
+        @include span( last 3);
+        height: 200px;
+    }
+}
+
+.footer-container {
+    background-color: $color-default;
+    .footer-top-section {
+        background-color: $color-black;
+        color: $color-default;
+        text-align: center;
+        font-size: 24px;
+    }
+    .footer-elements-container {
+        .footer-top {
+            @include container(1100px);
+            padding: 8px;
+            .footer-items {
+                @include span(1.25);
+                height: 100px;
+                @include breakpoint(max-width 800px) {
+                    @include span(5);
+                    margin-bottom: 10px;
+                }
+            }
+            .footer-items:nth-child(even) {
+                @include breakpoint(max-width 800px) {
+                    margin-left: 0;
+                }
+            }
+            .footer-items:nth-child(7) {
+                @include breakpoint(max-width 800px) {
+                    margin-bottom: 0;
+                }
+            }
+            .footer-items:nth-child(8) {
+                @include breakpoint(max-width 800px) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .footer-middle {
+            @include container(1100px);
+            padding: 8px;
+            .footer-gallery {
+                @include breakpoint(max-width 800px) {
+                    @include span(10);
+                    margin-bottom: 10px;
+                }
+                @include span(5);
+            }
+            .footer-media {
+                @include breakpoint(max-width 800px) {
+                    @include span(10);
+                }
+                @include span(5);
+                margin-left: 0;
+            }
+        }
+        .footer-bottom {
+            @include container(1100px);
+            padding: 8px;
+            .footer-bottom-right-item {
+                @include breakpoint(max-width 800px) {
+                    @include span(10);
+                    padding-bottom: 10px;
+                }
+                @include span(8);
+                clear: both;
+                .footer-bottom-items {
+                    @include breakpoint(max-width 800px) {
+                        @include span(10);
+                        margin-bottom: 10px;
+                    }
+                    @include span(2);
+                }
+                .footer-bottom-items:last-child {
+                    @include breakpoint(max-width 800px) {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .footer-bottom-left-item {
+                @include breakpoint(max-width 800px) {
+                    @include span(10);
+                    padding-bottom: 10px;
+                }
+                @include span(2);
+            }
+        }
+    }
+}

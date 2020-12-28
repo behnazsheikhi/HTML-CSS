@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url('../font/IRANSansWeb.eot') format('"embedded-opentype"'), url('../font/IRANSansWeb.woff') format('woff'), url('../font/IRANSansWeb.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANSansWeb-Bold';
+    src: url('../font/IRANSansWeb-Bold.eot') format('"embedded-opentype"'), url('../font/IRANSansWeb-Bold.woff') format('woff'), url('../font/IRANSansWeb-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+$main-font-size:12px;
+$font-deault:'IRANSansWeb';
+$font-bold: 'IRANSansWeb-Bold';
+$color-black:#000000;
+$color-red:red;
+$color-dimgray:dimgray;
+$color-cadetblue:cadetblue;
+$color-cyan:cyan;
+$color-lightgray:rgb(71,
+60,
+60);
+$color-gray:gray;
+$color-slategrey:slategrey;
+$color-default: #f2f2f2;
