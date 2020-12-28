@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('../font/vasir/Vazir.woff2') format('woff2'), url('../font/vasir/Vazir.woff') format('woff'), url('../font/vasir/Vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VazirBold';
+    src: url('../font/vasir/Vazir-Bold.woff2') format('woff2'), url('../font/vasir/Vazir-Bold.woff') format('woff'), url('../font/vasir/Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+$main-font-size:15px;
+$font-deault:'IRANSansWeb';
+$font-bold: 'IRANSansWeb-Bold';
+$color-black:#000000;
+$color-red:red;
+$color-dimgray:dimgray;
+$color-cadetblue:cadetblue;
+$color-cyan:cyan;
+$color-lightgray:lightgray;
+$color-gray:gray;
+$color-slategrey:slategrey;

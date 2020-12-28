@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'Vazir';
+  src: url("../font/vasir/Vazir.woff2") format("woff2"), url("../font/vasir/Vazir.woff") format("woff"), url("../font/vasir/Vazir.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'VazirBold';
+  src: url("../font/vasir/Vazir-Bold.woff2") format("woff2"), url("../font/vasir/Vazir-Bold.woff") format("woff"), url("../font/vasir/Vazir-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
+body,
+html {
+  font-family: "IRANSansWeb";
+  font-size: 15px; }
+
+.blog-whole-container {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 8px; }
+  .blog-whole-container:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.blog-inner-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 8px; }
+  .blog-inner-container:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.body-first-container {
+  background-color: lightgray; }
+
+.first-popular-topics {
+  background-color: gray;
+  width: 59.1836734694%;
+  margin: 0 auto; }
+
+.body-second-container {
+  margin: 10px 0; }
+
+.first-bottom-section {
+  clear: both;
+  clear: both;
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 10px;
+  margin-right: 0;
+  max-height: 300px;
+  margin-bottom: 10px; }
+  .first-bottom-section .right-section {
+    width: 48.9795918367%;
+    float: right;
+    margin-left: 2.0408163265%; }
+    @media (max-width: 800px) {
+      .first-bottom-section .right-section {
+        width: 100%;
+        float: right;
+        margin-right: 0;
+        margin-left: 0;
+        padding-bottom: 10px; } }
+  .first-bottom-section .first-bottom-middle {
+    width: 18.3673469388%;
+    float: right;
+    margin-left: 2.0408163265%; }
+    .first-bottom-section .first-bottom-middle .middle-top {
+      width: 100%;
+      float: right;
+      margin-right: 0;
+      margin-left: 0;
+      height: 50%; }
+    .first-bottom-section .first-bottom-middle .middle-bottom {
+      width: 100%;
+      float: right;
+      margin-right: 0;
+      margin-left: 0;
+      height: 50%; }
+    @media (max-width: 800px) {
+      .first-bottom-section .first-bottom-middle {
+        width: 100%;
+        float: right;
+        margin-right: 0;
+        margin-left: 0;
+        padding-bottom: 10px; }
+        .first-bottom-section .first-bottom-middle .middle-top {
+          width: 100%;
+          float: right;
+          margin-right: 0;
+          margin-left: 0;
+          height: 50%; }
+        .first-bottom-section .first-bottom-middle .middle-bottom {
+          width: 100%;
+          float: right;
+          margin-right: 0;
+          margin-left: 0;
+          height: 50%; } }
+  .first-bottom-section .first-bottom-left {
+    width: 28.5714285714%;
+    float: left;
+    margin-left: 0; }
+    @media (max-width: 800px) {
+      .first-bottom-section .first-bottom-left {
+        width: 100%;
+        float: right;
+        margin-right: 0;
+        margin-left: 0; } }
+
+.body-second-section {
+  clear: both;
+  clear: both;
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  margin-left: 0; }
+  .body-second-section .second-right {
+    width: 18.3673469388%;
+    float: right;
+    margin-left: 2.0408163265%; }
+    @media (max-width: 800px) {
+      .body-second-section .second-right {
+        width: 100%;
+        float: right;
+        margin-right: 0;
+        margin-left: 0;
+        padding-bottom: 10px; } }
+  .body-second-section .second-middle {
+    width: 48.9795918367%;
+    float: right;
+    margin-left: 2.0408163265%; }
+    @media (max-width: 800px) {
+      .body-second-section .second-middle {
+        width: 100%;
+        float: right;
+        margin-right: 0;
+        margin-left: 0;
+        padding-bottom: 10px; } }
+  .body-second-section .second-left {
+    width: 28.5714285714%;
+    float: left;
+    margin-left: 0; }
+    @media (max-width: 800px) {
+      .body-second-section .second-left {
+        width: 100%;
+        float: right;
+        margin-right: 0;
+        margin-left: 0; } }
+
+/*# sourceMappingURL=main-susy.css.map */

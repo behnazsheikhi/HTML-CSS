@@ -1,0 +1,108 @@
+@import '../node_modules/susy/sass/susy';
+@import '../node_modules/breakpoint-sass/stylesheets/breakpoint';
+@import 'variable';
+$susy:( columns:10, math:fluid, flow:rtl, container:auto, container-position:center);
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body,
+html {
+    font-family: $font-deault;
+    font-size: $main-font-size;
+}
+
+.blog-whole-container {
+    @include container(1600px);
+    padding: 0 8px;
+}
+
+.blog-inner-container {
+    @include container(1200px);
+    padding: 0 8px;
+}
+
+.body-first-container {
+    background-color: $color-lightgray;
+}
+
+.first-popular-topics {
+    background-color: $color-gray;
+    width: span(6);
+    margin: 0 auto;
+}
+
+.body-second-container {
+    margin: 10px 0;
+}
+
+.first-bottom-section {
+    clear: both;
+    @include full;
+    margin-top: 10px;
+    margin-right: 0;
+    max-height: 300px;
+    margin-bottom: 10px;
+    .right-section {
+        @include breakpoint(max-width 800px) {
+            @include span(10);
+            padding-bottom: 10px;
+        }
+        @include span(first 5);
+    }
+    .first-bottom-middle {
+        @include span(2);
+        .middle-top {
+            @include span(2 of 2);
+            height: 50%;
+        }
+        .middle-bottom {
+            @include span(2 of 2);
+            height: 50%;
+        }
+        @include breakpoint(max-width 800px) {
+            @include span(10);
+            padding-bottom: 10px;
+            .middle-top {
+                @include span(10 of 10);
+                height: 50%;
+            }
+            .middle-bottom {
+                @include span(10 of 10);
+                height: 50%;
+            }
+        }
+    }
+    .first-bottom-left {
+        @include breakpoint(max-width 800px) {
+            @include span(10 of 10);
+        }
+        @include span(last 3);
+    }
+}
+
+.body-second-section {
+    clear: both;
+    @include full;
+    .second-right {
+        @include breakpoint(max-width 800px) {
+            @include span(10);
+            padding-bottom: 10px;
+        }
+        @include span(2);
+    }
+    .second-middle {
+        @include breakpoint(max-width 800px) {
+            @include span(10);
+            padding-bottom: 10px;
+        }
+        @include span(5);
+    }
+    .second-left {
+        @include breakpoint(max-width 800px) {
+            @include span(10);
+        }
+        @include span(last 3);
+    }
+}
