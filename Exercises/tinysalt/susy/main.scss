@@ -503,6 +503,9 @@
                 padding: 8px;
                 float: right;
             }
+            li:first-child {
+                padding-top: 0;
+            }
             .img-container {
                 padding-left: 20px;
                 @include span(3.5);
@@ -512,10 +515,26 @@
                     border-radius: 50px;
                 }
             }
+            .img-container-square {
+                padding-left: 20px;
+                @include span(4.5);
+                margin-left: 0;
+                img {
+                    min-height: 100px;
+                }
+            }
             .text-container {
                 @include span(6.5);
                 margin-left: 0;
                 h5 {
+                    margin-top: 10px;
+                    margin-bottom: 0;
+                }
+            }
+            .text-container-square {
+                @include span(5.5);
+                margin-left: 0;
+                h4 {
                     margin-top: 10px;
                     margin-bottom: 0;
                 }
