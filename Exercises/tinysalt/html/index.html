@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
     <title>طراحی استراکچر با susy</title>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/lightslider/dist/js/lightslider.js"></script>
 </head>
 
 <body>
@@ -46,36 +48,101 @@
                 </div>
                 <nav class="menu-container">
                     <ul>
-                        <li>
-                            <a href="../image/flower.png" title="facebook" target="_blank">صفحه اصلی
+                        <li class="menu-items main-menu">
+                            <a id="custom-color" href="../image/flower.png" title="facebook" target="_blank">صفحه اصلی
                                 <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul class="subMenu">
+                                <li><a href="../images/flower.png" title="سیاسی" target="_self">سیاسی</a></li>
+                                <li><a href="../images/flower.png" title="سیاسی" target="_self">سیاسی</a></li>
+                                <li><a href="../images/flower.png" title="سیاسی" target="_self">سیاسی</a></li>
+                                <li><a href="../images/flower.png" title="سیاسی" target="_self">سیاسی</a></li>
+                            </ul>
                         </li>
-                        <li>
+                        <li class=" menu-items main-menu">
                             <a href="../image/flower.png" title="facebook" target="_blank">دستورالعمل ها
                                 <i class="fa fa-chevron-down" aria-hidden="true"></i> </a>
+                            <ul class="subMenu">
+                                <li><a href="../images/flower.png" title="سیاسی" target="_self">سیاسی</a></li>
+                                <li><a href="../images/flower.png" title="سیاسی" target="_self">سیاسی</a></li>
+                                <li><a href="../images/flower.png" title="سیاسی" target="_self">سیاسی</a></li>
+                                <li><a href="../images/flower.png" title="سیاسی" target="_self">سیاسی</a></li>
+                            </ul>
                         </li>
-                        <li>
+                        <li class=" menu-items main-menu">
                             <a href="../image/flower.png" title="facebook" target="_blank">ویژگی ها
                                 <i class="fa fa-chevron-down" aria-hidden="true"></i> </a>
+                            <ul class="subMenu">
+                                <li><a href="../images/flower.png" title="سیاسی" target="_self">سیاسی</a></li>
+                                <li><a href="../images/flower.png" title="سیاسی" target="_self">سیاسی</a></li>
+                                <li><a href="../images/flower.png" title="سیاسی" target="_self">سیاسی</a></li>
+                                <li><a href="../images/flower.png" title="سیاسی" target="_self">سیاسی</a></li>
+                            </ul>
                         </li>
-                        <li>
+                        <li class="menu-items main-menu">
                             <a href="../image/flower.png" title="facebook" target="_blank">صفحات
                                 <i class="fa fa-chevron-down" aria-hidden="true"></i> </a>
+                            <ul class="subMenu">
+                                <li><a href="../images/flower.png" title="سیاسی" target="_self">سیاسی</a></li>
+                                <li><a href="../images/flower.png" title="سیاسی" target="_self">سیاسی</a></li>
+                                <li><a href="../images/flower.png" title="سیاسی" target="_self">سیاسی</a></li>
+                                <li><a href="../images/flower.png" title="سیاسی" target="_self">سیاسی</a></li>
+                            </ul>
                         </li>
-                        <li>
+                        <li class="menu-items">
                             <a href="../image/flower.png" title="facebook" target="_blank">
                                 دوره ها</a>
                         </li>
-                        <li>
+                        <li class="menu-items main-menu">
                             <a href="../image/flower.png" title="facebook" target="_blank">فروشگاه
                                 <i class="fa fa-chevron-down" aria-hidden="true"></i> </a>
+                            <ul class="subMenu">
+                                <li><a href="../images/flower.png" title="سیاسی" target="_self">سیاسی</a></li>
+                                <li><a href="../images/flower.png" title="سیاسی" target="_self">سیاسی</a></li>
+                                <li><a href="../images/flower.png" title="سیاسی" target="_self">سیاسی</a></li>
+                                <li><a href="../images/flower.png" title="سیاسی" target="_self">سیاسی</a></li>
+                            </ul>
                         </li>
-                        <li>
+                        <li class="menu-items">
                             <a href="../image/flower.png" title="facebook" target="_blank">
                                  خرید</a>
                         </li>
                     </ul>
                 </nav>
+                <div id="open-menu-responsive" class="menu-container-responsive">
+                    <i class="fa fa-bars menu-icon" aria-hidden="true"></i>
+                    <div id="menu-responsive" class="menu-container-list">
+                        <ul>
+                            <li>
+                                <a href="../image/flower.png" title="facebook" target="_blank">صفحه اصلی
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="../image/flower.png" title="facebook" target="_blank">دستورالعمل ها
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i> </a>
+                            </li>
+                            <li>
+                                <a href="../image/flower.png" title="facebook" target="_blank">ویژگی ها
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i> </a>
+                            </li>
+                            <li>
+                                <a href="../image/flower.png" title="facebook" target="_blank">صفحات
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i> </a>
+                            </li>
+                            <li>
+                                <a href="../image/flower.png" title="facebook" target="_blank">
+                                    دوره ها</a>
+                            </li>
+                            <li>
+                                <a href="../image/flower.png" title="facebook" target="_blank">فروشگاه
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i> </a>
+                            </li>
+                            <li>
+                                <a href="../image/flower.png" title="facebook" target="_blank">
+                                     خرید</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="search-container">
                     <i class="fa fa-search" aria-hidden="true"></i>
                     <input type="text" placeholder="جستجو نمایید">
@@ -83,14 +150,44 @@
             </div>
             <div class="first-container">
                 <div class="first-right-section">
-                    <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
-                        <img src="../image/index.jpeg" alt="ویروس روسی"></a>
-                    <div class="img-text-container">
-                        <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
-                            <h3>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h3>
-                        </a>
-                        <a class="section-footer" href="../image/flower.png" target="_blank" title="کرونا ویروس">شیوع ویروس کرونا</a>
-                    </div>
+                    <ul id="lightslider">
+                        <li>
+                            <div class="right-section">
+                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
+                                    <img src="../image/index.jpeg" alt="ویروس روسی"></a>
+                                <div class="img-text-container">
+                                    <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
+                                        <h3>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h3>
+                                    </a>
+                                    <a class="section-footer" href="../image/flower.png" target="_blank" title="کرونا ویروس">شیوع ویروس کرونا</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="right-section">
+                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
+                                    <img src="../image/e.jpeg" alt="ویروس روسی"></a>
+                                <div class="img-text-container">
+                                    <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
+                                        <h3>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h3>
+                                    </a>
+                                    <a class="section-footer" href="../image/flower.png" target="_blank" title="کرونا ویروس">شیوع ویروس کرونا</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="right-section">
+                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
+                                    <img src="../image/b.jpeg" alt="ویروس روسی"></a>
+                                <div class="img-text-container">
+                                    <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
+                                        <h3>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h3>
+                                    </a>
+                                    <a class="section-footer" href="../image/flower.png" target="_blank" title="کرونا ویروس">شیوع ویروس کرونا</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
                 <div class="first-left-section">
                     <ul>
@@ -197,38 +294,38 @@
                     <div class="diverse-header">
                         <h4>
                             <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                            <hr class="header-line">
                         </h4>
+                        <hr class="header-line">
                     </div>
                     <div class="diverse-main-image-container ">
-                        <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                        <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                             <img src="../image/ardoghan.jpeg " alt=" اخبار ترکیه "></a>
                     </div>
                     <ul class="diverse-main-list-container ">
                         <li>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h3>
                                     ترکیه امیدوار به برقراری ارتباط با اسرايیل است
                                 </h3>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                             <hr class="list-line">
                         </li>
 
                         <li>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                             <hr class="list-line">
                         </li>
                         <li>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                         </li>
                     </ul>
@@ -238,18 +335,19 @@
                         <div class="diverse-header">
                             <h4>
                                 <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                                <hr class="header-line">
+
                             </h4>
+                            <hr class="header-line">
                         </div>
                         <div>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <img src="../image/abondan.jpeg" alt="کرونا ویروس"></a>
                         </div>
                         <div class="middle-text-container">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                         </div>
 
@@ -258,18 +356,19 @@
                         <div class="diverse-header">
                             <h4>
                                 <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                                <hr class="header-line">
+
                             </h4>
+                            <hr class="header-line">
                         </div>
                         <div>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <img src="../image/YPG.jpeg" alt="کرونا ویروس"></a>
                         </div>
                         <div class="middle-text-container">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                         </div>
                     </div>
@@ -279,8 +378,9 @@
                         <div class="diverse-header">
                             <h4>
                                 <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                                <hr class="header-line">
+
                             </h4>
+                            <hr class="header-line">
                         </div>
                         <ul>
                             <li>
@@ -328,8 +428,9 @@
                         <div class="diverse-header">
                             <h4>
                                 <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                                <hr class="header-line">
+
                             </h4>
+                            <hr class="header-line">
                         </div>
                         <ul>
                             <li>
@@ -355,59 +456,60 @@
                 <div class="diverse-header">
                     <h4>
                         <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                        <hr class="header-line">
+
                     </h4>
+                    <hr class="header-line">
                 </div>
                 <ul>
                     <li class="horizontal-items-section ">
                         <div class="img-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
-                                <img src="../image/n.jpeg " alt="ویروس روسی "></a>
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
+                                <img src="../image/e.jpeg " alt="ویروس روسی "></a>
                         </div>
                         <div class="text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                             ویروس کرونا</a>
                         </div>
                     </li>
                     <li class="horizontal-items-section ">
                         <div class="img-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
-                                <img src="../image/n.jpeg " alt="ویروس روسی "></a>
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
+                                <img src="../image/a.jpeg " alt="ویروس روسی "></a>
                         </div>
                         <div class="text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                             ویروس کرونا</a>
                         </div>
                     </li>
                     <li class="horizontal-items-section ">
                         <div class="img-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <img src="../image/n.jpeg " alt="ویروس روسی "></a>
                         </div>
                         <div class="text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                             ویروس کرونا</a>
                         </div>
                     </li>
                     <li class="horizontal-items-section ">
                         <div class="img-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
-                                <img src="../image/n.jpeg " alt="ویروس روسی "></a>
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
+                                <img src="../image/ardoghan.jpeg " alt="ویروس روسی "></a>
                         </div>
                         <div class="text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                             ویروس کرونا</a>
                         </div>
                     </li>
@@ -417,38 +519,39 @@
                 <div class="main-section ">
                     <div class="diverse-header">
                         <h4>
-                            <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                            <hr class="header-line">
+                            <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>تجارت
+
                         </h4>
+                        <hr class="header-line">
                     </div>
                     <div class="diverse-main-image-container ">
-                        <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                        <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                             <img src="../image/ardoghan.jpeg " alt=" اخبار ترکیه "></a>
                     </div>
                     <ul class="diverse-main-list-container ">
                         <li>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h3>
                                     ترکیه امیدوار به برقراری ارتباط با اسرايیل است
                                 </h3>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                             <hr class="list-line">
                         </li>
                         <li>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                             <hr class="list-line">
                         </li>
                         <li>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                         </li>
                     </ul>
@@ -457,19 +560,20 @@
                     <div class="middle-top ">
                         <div class="diverse-header">
                             <h4>
-                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                                <hr class="header-line">
+                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>دفاع
+
                             </h4>
+                            <hr class="header-line">
                         </div>
                         <div>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <img src="../image/abondan.jpeg " alt=" "></a>
                         </div>
                         <div class="middle-text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                         </div>
 
@@ -478,68 +582,59 @@
                         <div class="diverse-header">
                             <h4>
                                 <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                                <hr class="header-line">
+
                             </h4>
+                            <hr class="header-line">
                         </div>
                         <div>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <img src="../image/YPG.jpeg " alt=" "></a>
                         </div>
                         <div class="middle-text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                         </div>
                     </div>
                 </div>
                 <div class="left-list-section ">
-                    <div class="diverse-header">
+                    <div class="recipes-title">
                         <h4>
-                            <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                            <hr class="header-line">
+                            <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>دستورالعمل های ویژه
                         </h4>
                     </div>
-                    <ul>
+                    <ul class="recipes-list">
                         <li>
-                            <div class="img-container">
-                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
-                                    <img src="../image/b.jpeg" alt="ویروس روسی"></a>
-                            </div>
-                            <div class="text-container">
-                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
-                                    <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
-                                </a>
-                                <a class="section-footer-custom" href="../image/flower.png" target="_blank" title="کرونا ویروس">
+
+                            <a class="recipes-text" href="../image/flower.png" target="_blank" title="کرونا ویروس">
+                                <span>1.</span>
+                                <h4>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h4>
+                            </a>
+                            <a class="section-footer-custom custom-padding" href="../image/flower.png" target="_blank" title="کرونا ویروس">
                                 ویروس کرونا</a>
-                            </div>
+
                         </li>
                         <li>
-                            <div class="img-container">
-                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
-                                    <img src="../image/s.jpeg" alt="ویروس روسی"></a>
-                            </div>
-                            <div class="text-container">
-                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
-                                    <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
-                                </a>
-                                <a class="section-footer-custom" href="../image/flower.png" target="_blank" title="کرونا ویروس">
+
+                            <a class="recipes-text" href="../image/flower.png" target="_blank" title="کرونا ویروس">
+                                <span>2.</span>
+                                <h4>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h4>
+                            </a>
+                            <a class="section-footer-custom custom-padding" href="../image/flower.png" target="_blank" title="کرونا ویروس">
                                     ویروس کرونا</a>
-                            </div>
+
                         </li>
                         <li>
-                            <div class="img-container">
-                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
-                                    <img src="../image/q.jpeg" alt="ویروس روسی"></a>
-                            </div>
-                            <div class="text-container">
-                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
-                                    <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
-                                </a>
-                                <a class="section-footer-custom" href="../image/flower.png" target="_blank" title="کرونا ویروس">
+
+                            <a class="recipes-text" href="../image/flower.png" target="_blank" title="کرونا ویروس">
+                                <span>3.</span>
+                                <h4>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h4>
+                            </a>
+                            <a class="section-footer-custom custom-padding" href="../image/flower.png" target="_blank" title="کرونا ویروس">
                                     ویروس کرونا</a>
-                            </div>
+
                         </li>
                     </ul>
                 </div>
@@ -548,62 +643,63 @@
                 <div class="diverse-header">
                     <h4>
                         <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                        <hr class="header-line">
+
                     </h4>
+                    <hr class="header-line">
                 </div>
                 <ul>
                     <li class="horizontal-items-section ">
                         <div class="img-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <img src="../image/a.jpeg " alt="ویروس روسی "></a>
                         </div>
                         <div class="text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                         </div>
                     </li>
                     <li class="horizontal-items-section ">
 
                         <div class="img-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <img src="../image/b.jpeg " alt="ویروس روسی "></a>
                         </div>
                         <div class="text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                             ویروس کرونا</a>
                         </div>
                     </li>
                     <li class="horizontal-items-section ">
 
                         <div class="img-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <img src="../image/c.jpeg " alt="ویروس روسی "></a>
                         </div>
                         <div class="text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                             ویروس کرونا</a>
                         </div>
                     </li>
                     <li class="horizontal-items-section ">
 
                         <div class="img-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <img src="../image/d.jpeg " alt="ویروس روسی "></a>
                         </div>
                         <div class="text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                         </div>
                     </li>
@@ -613,38 +709,39 @@
                 <div class="main-section ">
                     <div class="diverse-header">
                         <h4>
-                            <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                            <hr class="header-line">
+                            <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a> ترکیه
+
                         </h4>
+                        <hr class="header-line">
                     </div>
                     <div class="diverse-main-image-container ">
-                        <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                        <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                             <img src="../image/ardoghan.jpeg " alt=" اخبار ترکیه "></a>
                     </div>
                     <ul class="diverse-main-list-container ">
                         <li>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h3>
                                     ترکیه امیدوار به برقراری ارتباط با اسرايیل است
                                 </h3>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                             <hr class="list-line">
                         </li>
                         <li>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                             <hr class="list-line">
                         </li>
                         <li>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
 
                         </li>
@@ -654,19 +751,20 @@
                     <div class="middle-top ">
                         <div class="diverse-header">
                             <h4>
-                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                                <hr class="header-line">
+                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>استانبول
+
                             </h4>
+                            <hr class="header-line">
                         </div>
                         <div>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <img src="../image/abondan.jpeg " alt=" "></a>
                         </div>
                         <div class="middle-text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                         </div>
 
@@ -674,131 +772,192 @@
                     <div class="middle-bottom ">
                         <div class="diverse-header">
                             <h4>
-                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                                <hr class="header-line">
+                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>تحقیقات
+
                             </h4>
+                            <hr class="header-line">
                         </div>
                         <div>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <img src="../image/YPG.jpeg " alt=" "></a>
                         </div>
                         <div class="middle-text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                         </div>
                     </div>
                 </div>
                 <div class="left-list-section ">
-                    <div class="diverse-header">
-                        <h4>
-                            <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                            <hr class="header-line">
-                        </h4>
+                    <div class="header">
+                        <div class="title">
+                            <h4>
+                                پربازدیدترین ها
+                            </h4>
+                        </div>
+                        <div class="tab">
+                            <ul>
+                                <li class="tab-items">
+                                    <a class="tablinks" id="today-link">امروز</a>
+                                </li>
+                                <li>
+                                    <a class="tablinks" id="week-link">هفته</a>
+                                </li>
+                                <li>
+                                    <a class="tablinks" id="month-link">ماه</a>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
-                    <ul>
-                        <li>
-                            <div class="img-container">
+                    <div class="tab-lists">
+                        <ol id="today" class="tab-order-list">
+                            <li>
                                 <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
-                                    <img src="../image/ardoghan.jpeg" alt="ویروس روسی"></a>
-                            </div>
-                            <div class="text-container">
-                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
-                                    <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
+                                    <h4>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h4>
                                 </a>
-                                <a class="section-footer-custom" href="../image/flower.png" target="_blank" title="کرونا ویروس">
-                                ویروس کرونا</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-container">
+                            </li>
+                            <li>
                                 <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
-                                    <img src="../image/avatar.jpg" alt="ویروس روسی"></a>
-                            </div>
-                            <div class="text-container">
-                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
-                                    <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
+                                    <h4>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h4>
                                 </a>
-                                <a class="ssection-footer-custom" href="../image/flower.png" target="_blank" title="کرونا ویروس">
-                                    ویروس کرونا</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-container">
+                            </li>
+                            <li>
                                 <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
-                                    <img src="../image/ardoghan.jpeg" alt="ویروس روسی"></a>
-                            </div>
-                            <div class="text-container">
-                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
-                                    <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
+                                    <h4>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h4>
                                 </a>
-                                <a class="section-footer-custom" href="../image/flower.png" target="_blank" title="کرونا ویروس">
-                                    ویروس کرونا</a>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                            <li>
+                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
+                                    <h4>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
+                                    <h4>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h4>
+                                </a>
+                            </li>
+                        </ol>
+
+                        <ol id="week" class="tab-content tab-order-list">
+                            <li>
+                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
+                                    <h4>پر بازدیدترین ها در طول هفته ی گذشته</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
+                                    <h4>پر بازدیدترین ها در طول هفته ی گذشته</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
+                                    <h4>پر بازدیدترین ها در طول هفته ی گذشته</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
+                                    <h4>پر بازدیدترین ها در طول هفته ی گذشته</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
+                                    <h4>پر بازدیدترین ها در طول هفته ی گذشته</h4>
+                                </a>
+                            </li>
+                        </ol>
+
+                        <ol id="month" class="tab-content tab-order-list">
+                            <li>
+                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
+                                    <h4>مهم ترین اخبار ماه گذشته</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
+                                    <h4>مهم ترین اخبار ماه گذشته</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
+                                    <h4>مهم ترین اخبار ماه گذشته</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
+                                    <h4>مهم ترین اخبار ماه گذشته</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
+                                    <h4>مهم ترین اخبار ماه گذشته</h4>
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
             </div>
             <div class="horizontal-container ">
                 <div class="diverse-header">
                     <h4>
                         <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                        <hr class="header-line">
+
                     </h4>
+                    <hr class="header-line">
                 </div>
                 <ul>
                     <li class="horizontal-items-section ">
 
                         <div class="img-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <img src="../image/a.jpeg " alt="ویروس روسی "></a>
                         </div>
                         <div class="text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                             ویروس کرونا</a>
                         </div>
                     </li>
                     <li class="horizontal-items-section ">
                         <div class="img-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <img src="../image/b.jpeg " alt="ویروس روسی "></a>
                         </div>
                         <div class="text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                         </div>
                     </li>
                     <li class="horizontal-items-section ">
                         <div class="img-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <img src="../image/c.jpeg " alt="ویروس روسی "></a>
                         </div>
                         <div class="text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                         </div>
                     </li>
                     <li class="horizontal-items-section ">
                         <div class="img-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <img src="../image/d.jpeg " alt="ویروس روسی "></a>
                         </div>
                         <div class="text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                         </div>
                     </li>
@@ -809,37 +968,38 @@
                     <div class="diverse-header">
                         <h4>
                             <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                            <hr class="header-line">
+
                         </h4>
+                        <hr class="header-line">
                     </div>
                     <div class="diverse-main-image-container ">
-                        <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                        <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                             <img src="../image/ardoghan.jpeg " alt=" اخبار ترکیه "></a>
                     </div>
                     <ul class="diverse-main-list-container ">
                         <li>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h3>
                                     ترکیه امیدوار به برقراری ارتباط با اسرايیل است
                                 </h3>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                             <hr class="list-line">
                         </li>
                         <li>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                             <hr class="list-line">
                         </li>
                         <li>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                         </li>
                     </ul>
@@ -849,18 +1009,19 @@
                         <div class="diverse-header">
                             <h4>
                                 <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                                <hr class="header-line">
+
                             </h4>
+                            <hr class="header-line">
                         </div>
                         <div>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <img src="../image/abondan.jpeg " alt=" "></a>
                         </div>
                         <div class="middle-text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                         </div>
 
@@ -869,18 +1030,19 @@
                         <div class="diverse-header">
                             <h4>
                                 <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                                <hr class="header-line">
+
                             </h4>
+                            <hr class="header-line">
                         </div>
                         <div>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <img src="../image/YPG.jpeg " alt=" "></a>
                         </div>
                         <div class="middle-text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                         </div>
                     </div>
@@ -889,44 +1051,45 @@
                     <div class="diverse-header">
                         <h4>
                             <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                            <hr class="header-line">
+
                         </h4>
+                        <hr class="header-line">
                     </div>
                     <ul>
                         <li>
-                            <div class="img-container">
+                            <div class="img-container-square">
                                 <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
                                     <img src="../image/ardoghan.jpeg" alt="ویروس روسی"></a>
                             </div>
-                            <div class="text-container">
+                            <div class="text-container-square">
                                 <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
-                                    <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
+                                    <h4>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h4>
                                 </a>
                                 <a class="section-footer-custom" href="../image/flower.png" target="_blank" title="کرونا ویروس">
                                 ویروس کرونا</a>
                             </div>
                         </li>
                         <li>
-                            <div class="img-container">
+                            <div class="img-container-square">
                                 <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
                                     <img src="../image/avatar.jpg" alt="ویروس روسی"></a>
                             </div>
-                            <div class="text-container">
+                            <div class="text-container-square">
                                 <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
-                                    <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
+                                    <h4>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h4>
                                 </a>
                                 <a class="section-footer-custom" href="../image/flower.png" target="_blank" title="کرونا ویروس">
                                     ویروس کرونا</a>
                             </div>
                         </li>
                         <li>
-                            <div class="img-container">
+                            <div class="img-container-square">
                                 <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
                                     <img src="../image/ardoghan.jpeg" alt="ویروس روسی"></a>
                             </div>
-                            <div class="text-container">
+                            <div class="text-container-square">
                                 <a href="../image/flower.png" target="_blank" title="کرونا ویروس">
-                                    <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
+                                    <h4>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h4>
                                 </a>
                                 <a class="section-footer-custom" href="../image/flower.png" target="_blank" title="کرونا ویروس">
                                     ویروس کرونا</a>
@@ -939,46 +1102,47 @@
                 <div class="diverse-header">
                     <h4>
                         <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                        <hr class="header-line">
+
                     </h4>
+                    <hr class="header-line">
                 </div>
                 <ul>
                     <li class="horizontal-items-big-section ">
                         <div class="img-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <img src="../image/a.jpeg " alt="ویروس روسی "></a>
                         </div>
                         <div class="text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                         </div>
                     </li>
                     <li class="horizontal-items-big-section ">
                         <div class="img-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <img src="../image/b.jpeg " alt="ویروس روسی "></a>
                         </div>
                         <div class="text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                         </div>
                     </li>
                     <li class="horizontal-items-big-section ">
                         <div class="img-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <img src="../image/c.jpeg " alt="ویروس روسی "></a>
                         </div>
                         <div class="text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                         </div>
                     </li>
@@ -989,37 +1153,38 @@
                     <div class="diverse-header">
                         <h4>
                             <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                            <hr class="header-line">
+
                         </h4>
+                        <hr class="header-line">
                     </div>
                     <div class="diverse-main-image-container ">
-                        <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                        <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                             <img src="../image/ardoghan.jpeg " alt=" اخبار ترکیه "></a>
                     </div>
                     <ul class="diverse-main-list-container ">
                         <li>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h3>
                                     ترکیه امیدوار به برقراری ارتباط با اسرايیل است
                                 </h3>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                             <hr class="list-line">
                         </li>
                         <li>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                             <hr class="list-line">
                         </li>
                         <li>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                         </li>
                     </ul>
@@ -1029,18 +1194,19 @@
                         <div class="diverse-header">
                             <h4>
                                 <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                                <hr class="header-line">
+
                             </h4>
+                            <hr class="header-line">
                         </div>
                         <div>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <img src="../image/abondan.jpeg " alt=" "></a>
                         </div>
                         <div class="middle-text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                         </div>
 
@@ -1049,18 +1215,19 @@
                         <div class="diverse-header">
                             <h4>
                                 <a href="../image/flower.png" target="_blank" title="کرونا ویروس"></a>سیاست
-                                <hr class="header-line">
+
                             </h4>
+                            <hr class="header-line">
                         </div>
                         <div>
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <img src="../image/YPG.jpeg " alt=" "></a>
                         </div>
                         <div class="middle-text-container ">
-                            <a href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 <h5>تعداد مبتلایان به کرونا ویروس به ۳ میلیون رسید</h5>
                             </a>
-                            <a class="section-footer " href="../image/flower.png " target="_blank " title="کرونا ویروس ">
+                            <a class="section-footer " href="../image/flower.png " target="_blank" title="کرونا ویروس ">
                                 ویروس کرونا</a>
                         </div>
                     </div>
@@ -1248,8 +1415,6 @@
                         </li>
                     </ul>
                 </div>
-
-
             </div>
             <div class="footer-middle ">
                 <div class="footer-gallery ">
@@ -1257,16 +1422,16 @@
                 <div class="footer-media">
                     <ul>
                         <li>
-                            <a href="../image/flower.png " title="youtube " target="_blank "> <i class="fa fa-youtube-play " aria-hidden="true "></i></a>
+                            <a href="../image/flower.png " title="youtube " target="_blank"> <i class="fa fa-youtube-play" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="../image/flower.png " title="instagram " target="_blank "> <i class="fa fa-instagram " aria-hidden="true "></i></a>
+                            <a href="../image/flower.png " title="instagram " target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="../image/flower.png " title="twitter " target="_blank "><i class="fa fa-twitter " aria-hidden="true "></i> </a>
+                            <a href="../image/flower.png " title="twitter " target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> </a>
                         </li>
                         <li>
-                            <a href="../image/flower.png " title="facebook " target="_blank "><i class="fa fa-facebook " aria-hidden="true "></i></a>
+                            <a href="../image/flower.png " title="facebook " target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                         </li>
                     </ul>
 
@@ -1276,29 +1441,30 @@
                 <div class=footer-bottom-right-item>
                     <ul>
                         <li>
-                            <a href="../image/flower.png " title="youtube " target="_blank ">مشاغل </a>
+                            <a href="../image/flower.png " title="youtube " target="_blank">مشاغل </a>
                         </li>
                         <li>
-                            <a href="../image/flower.png " title="instagram " target="_blank "> حریم خصوصی</a>
+                            <a href="../image/flower.png " title="instagram " target="_blank"> حریم خصوصی</a>
                         </li>
                         <li>
-                            <a href="../image/flower.png " title="twitter " target="_blank "> درباره ما</a>
+                            <a href="../image/flower.png " title="twitter " target="_blank"> درباره ما</a>
                         </li>
                         <li>
-                            <a href="../image/flower.png " title="facebook " target="_blank ">تماس با ما</a>
+                            <a href="../image/flower.png " title="facebook " target="_blank">تماس با ما</a>
                         </li>
                         <li>
-                            <a href="../image/flower.png " title="facebook " target="_blank ">ًRSS</a>
+                            <a href="../image/flower.png " title="facebook " target="_blank">آر اس اس</a>
                         </li>
                     </ul>
                 </div>
                 <div class="footer-bottom-left-item">
-                    <a href="../image/flower.png " title="facebook " target="_blank ">طراحی شده توسط بهناز شیخی</a>
+                    <a href="../image/flower.png " title="facebook " target="_blank">طراحی شده توسط بهناز شیخی</a>
                 </div>
 
             </div>
         </div>
     </footer>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
